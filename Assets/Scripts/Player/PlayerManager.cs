@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
-    public PlayerMovement movement;
+    public static PlayerMovement Movement;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -17,6 +17,11 @@ public class PlayerManager : MonoBehaviour
         }
 
         Instance = this;
-        movement = GetComponent<PlayerMovement>();
+        Movement = GetComponent<PlayerMovement>();
+    }
+
+    void Update()
+    {
+        TimerManager.UpdateTimers();
     }
 }

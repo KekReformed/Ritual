@@ -12,11 +12,11 @@ public class GroundCheck : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        PlayerManager.Instance.movement.grounded = true;
+        PlayerManager.Movement.grounded = true;
     }
     
     void OnTriggerExit(Collider other)
     {
-        PlayerManager.Instance.movement.grounded = false;
+        PlayerManager.Movement.grounded = false;
     }
 }
