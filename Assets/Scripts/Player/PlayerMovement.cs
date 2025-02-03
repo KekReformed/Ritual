@@ -15,12 +15,17 @@ public class PlayerMovement : MonoBehaviour
     const string DashName = "Dash";
 
     readonly MovementVector _defaultVector = new MovementVector(Vector3.zero,-10);
+    Vector3 _lastMovementVector;
     MovementVector _currentMovementVector;
-    
+
+
+    Vector3 _lastMovementInput;
     Vector3 _velocity;
     
     [Header("Basic Stats")]
     [SerializeField] float speed;
+    [SerializeField] float airDeceleration;
+    [SerializeField] float deceleration;
     [SerializeField] float gravityScale = 1;
     [SerializeField] float jumpForce;
     
@@ -29,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dashTime;
     [Tooltip("The multiplier applied to normal speed whilst dashing")]
     [SerializeField] float dashSpeed;
+    [Tooltip("The vertical velocity to be applied during the dash")] 
+    [SerializeField] float dashHeight;
     [Tooltip("The amount of time in seconds we have to wait to dash again after the last dash has ended")]
     [SerializeField] float dashCooldown;
     
@@ -49,43 +56,69 @@ public class PlayerMovement : MonoBehaviour
         _currentMovementVector = _defaultVector;
         TimerManager.AddTimer(new Timer(DashName,dashTime));
         TimerManager.AddTimer(new Timer("DashCooldown",dashCooldown + dashTime));
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (grounded)
+        {
+            if (_lastMovementVector.x != 0) _lastMovementVector.x -= deceleration * Mathf.Sign(_lastMovementVector.x) * Time.deltaTime; 
+            if (_lastMovementVector.z != 0) _lastMovementVector.z -= deceleration * Mathf.Sign(_lastMovementVector.z) * Time.deltaTime; 
+        }
+        else
+        {
+            if (_lastMovementVector.x != 0) _lastMovementVector.x -= airDeceleration * Mathf.Sign(_lastMovementVector.x) * Time.deltaTime; 
+            if (_lastMovementVector.z != 0) _lastMovementVector.z -= airDeceleration * Mathf.Sign(_lastMovementVector.z) * Time.deltaTime; 
+        }
+
+        Vector3 decelVector = _lastMovementVector;
+        
         if (!grounded) ApplyGravity();
         else _velocity.y = 0f;
         
         if (grounded && _jumpAction.triggered) Jump();
-        if (_dashAction.triggered) Dash();
         
-        Move();
+        Dash();
+        
+        MovementVector tempMoveVector = Move();
+
+        if (CheckPriority(tempMoveVector)) _currentMovementVector = tempMoveVector;
 
         Vector3 tempVector = _currentMovementVector.vector;
-
+        
         if (_currentMovementVector.applyGravity)
         {
-            tempVector += _velocity;
+            tempVector.y += _velocity.y;
         }
         else
         {
             _velocity.y = 0f;
         }
+
+        //If the speed we would get from our current vector is less than the last vector deccelerated then use the deccelerated vector rather than the new vector
+        if (Mathf.Abs(_currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
+        if (Mathf.Abs(_currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
         
-        _characterController.Move((tempVector) * Time.deltaTime);
-        
-        //This must be done at the end of movement
+        _characterController.Move(tempVector * Time.deltaTime);
+
+        _lastMovementVector = tempVector;
         _currentMovementVector = _defaultVector;
     }
 
-    void Move()
+    
+    
+    MovementVector Move()
     {
         //Get a reference movement vector so we don't have to call the function multiple times, if we aren't currently inputting any movement ignore this
         Vector3 moveInput = _moveAction.ReadValue<Vector2>();
-        if(moveInput.magnitude < 0.1f || _currentMovementVector.priority > 0) return;
+        if(moveInput.magnitude < 0.1f && TimerManager.Timers[DashName].CurrentTime <= 0f) return new MovementVector(Vector3.zero, -10);
+        if (moveInput.magnitude < 0.1f && TimerManager.Timers[DashName].CurrentTime > 0f) moveInput = _lastMovementInput;
 
         bool applyGravity = true;
+        int priority = 0;
+        
         //Rotate towards the direction were going to move, based on the way the camera is facing
         float targetAngle = GetAngleTowardsVector(moveInput);
         transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
@@ -93,13 +126,18 @@ public class PlayerMovement : MonoBehaviour
         //Move in the direction the camera is facing
         Vector3 move = (Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward).normalized * speed;
 
+        move.y = 0;
+        
         if (TimerManager.Timers[DashName].CurrentTime > 0f)
         {
             move *= dashSpeed;
             applyGravity = false;
+            if(!grounded) move.y += dashHeight;
+            priority = 2;
         }
-        
-        _currentMovementVector = new MovementVector(new Vector3(move.x, 0f, move.z), 0,applyGravity);
+
+        _lastMovementInput = moveInput;
+        return new MovementVector(new Vector3(move.x, move.y, move.z), priority, applyGravity);
     }
     
     void ApplyGravity()
@@ -107,13 +145,23 @@ public class PlayerMovement : MonoBehaviour
         _velocity.y += -9.81f * gravityScale * Time.deltaTime;
     }
 
+    bool CheckPriority(MovementVector movementVector)
+    {
+        return movementVector.priority > _currentMovementVector.priority;
+    }
+
     void Dash()
     {
-        if(TimerManager.Timers["DashCooldown"].CurrentTime > 0f) return;
+        if (TimerManager.Timers[DashName].CurrentTime <= 0f && _currentMovementVector.priority < 3)
+        {
+            _currentMovementVector.applyGravity = true;
+        }
+        if (!_dashAction.triggered || TimerManager.Timers["DashCooldown"].CurrentTime > 0f) return;
         
         TimerManager.ResetTimer(DashName);
         TimerManager.ResetTimer("DashCooldown");
     }
+    
 
     /// <summary>
     /// Gets the angle between the characters forward direction, and the way the camera is currently facing useful for correcting movement towards camera

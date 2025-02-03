@@ -1170,10 +1170,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  airDeceleration: 25
+  deceleration: 100
   gravityScale: 4
   jumpForce: 20
   dashTime: 0.25
   dashSpeed: 5
+  dashHeight: 1
   dashCooldown: 0.5
   grounded: 0
 --- !u!114 &2143499115

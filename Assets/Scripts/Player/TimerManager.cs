@@ -5,17 +5,28 @@ public class TimerManager
 {
     public static Dictionary<string,Timer> Timers = new Dictionary<string, Timer>();
 
+    /// <summary>
+    /// Add a new timer to the timer manager
+    /// </summary>
     public static void AddTimer(Timer timer)
     { ;
         Timers.Add(timer.Name,timer);
     }
 
+    
+    /// <summary>
+    /// Resets a timer back to its MaxTime
+    /// </summary>
     public static void ResetTimer(string timerName)
     {
         Timer timer = Timers[timerName];
         timer.CurrentTime = timer.MaxTime;
     }
     
+    
+    /// <summary>
+    /// Used to update all timers, should only be ran once in the player manager or similiar area
+    /// </summary>
     public static void UpdateTimers()
     {
         foreach (Timer timer in Timers.Values)
