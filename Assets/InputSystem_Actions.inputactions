@@ -33,10 +33,19 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "AltAttack",
+                    "type": "Button",
+                    "id": "466ce2df-0e6f-49d4-9520-6ab70fdc0036",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
@@ -310,12 +319,12 @@
                 },
                 {
                     "name": "",
-                    "id": "b3c1c7f0-bd20-4ee7-a0f1-899b24bca6d7",
-                    "path": "<Keyboard>/enter",
+                    "id": "ca7d0409-4ee9-4855-8db8-d0c117639d99",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Attack",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "AltAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

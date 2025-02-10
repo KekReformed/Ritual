@@ -1712,11 +1712,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2143499112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc8bef275d7f543a50018480b007f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4796f83e3cd9443ba6153b7a0a746a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball: {fileID: 3924394950785101786, guid: ccb158d2cf59eee47a36febe793e54c7, type: 3}
-  aimpoint: {fileID: 1994893808}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance;
     public static PlayerMovement Movement;
     public static PlayerInput PlayerInput;
-    public int Mana;
+    public float Mana;
 
     public TMP_Text manaText;
     
@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour
         TimerManager.UpdateTimers();
     }
 
-    public static void SetMana(int mana)
+    public static void SetMana(float mana)
     {
         Instance.Mana = mana;
         Instance.manaText.SetText(mana.ToString());
