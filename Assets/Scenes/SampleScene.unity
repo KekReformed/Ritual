@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   airDeceleration: 25
-  deceleration: 100
+  deceleration: 1000
   gravityScale: 4
   jumpForce: 20
   dashTime: 0.25

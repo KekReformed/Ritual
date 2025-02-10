@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -62,18 +60,26 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 decelVector = Vector3.zero;
+        
+        
+        //Decelerate us if we were moving last frame, this only gets applied if our new vector after deceleration would be faster than _currentMovementVector
         if (grounded)
         {
-            if (_lastMovementVector.x != 0) _lastMovementVector.x -= deceleration * Mathf.Sign(_lastMovementVector.x) * Time.deltaTime; 
-            if (_lastMovementVector.z != 0) _lastMovementVector.z -= deceleration * Mathf.Sign(_lastMovementVector.z) * Time.deltaTime; 
+            if (_lastMovementVector.x != 0) decelVector.x = _lastMovementVector.x - deceleration * _lastMovementVector.normalized.x * Time.deltaTime; 
+            if (_lastMovementVector.z != 0) decelVector.z = _lastMovementVector.z - deceleration * _lastMovementVector.normalized.z * Time.deltaTime; 
         }
         else
         {
-            if (_lastMovementVector.x != 0) _lastMovementVector.x -= airDeceleration * Mathf.Sign(_lastMovementVector.x) * Time.deltaTime; 
-            if (_lastMovementVector.z != 0) _lastMovementVector.z -= airDeceleration * Mathf.Sign(_lastMovementVector.z) * Time.deltaTime; 
+            if (_lastMovementVector.x != 0) decelVector.x = _lastMovementVector.x - airDeceleration * _lastMovementVector.normalized.x * Time.deltaTime; 
+            if (_lastMovementVector.z != 0) decelVector.z = _lastMovementVector.z - airDeceleration * _lastMovementVector.normalized.z * Time.deltaTime; 
         }
-
-        Vector3 decelVector = _lastMovementVector;
+        
+        //If deceleration would result in us actually increasing our speed (e.g. we decelrate 1.0 by 2.0 we would be going at -1.0 speed) then set our decelVector to 0;
+        if (Mathf.Sign(decelVector.x) != Mathf.Sign(_lastMovementVector.x)) decelVector.x = 0;
+        if (Mathf.Sign(decelVector.z) != Mathf.Sign(_lastMovementVector.z)) decelVector.z = 0;
+        
+        
         
         if (!grounded) ApplyGravity();
         else _velocity.y = 0f;
@@ -97,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
             _velocity.y = 0f;
         }
 
-        //If the speed we would get from our current vector is less than the last vector deccelerated then use the deccelerated vector rather than the new vector
+        //If the horizonatal speed we would get from our current vector is less than the last vector deccelerated then use the deccelerated vector rather than the new vector
         if (Mathf.Abs(_currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
         if (Mathf.Abs(_currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
         
