@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
-    PlayerInput _playerInput;
+    private PlayerInput _playerInput;
     InputAction _moveAction;
     InputAction _jumpAction;
     InputAction _dashAction;
@@ -43,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _playerInput = GetComponent<PlayerInput>();
+        _playerInput = PlayerManager.PlayerInput;
         _moveAction = _playerInput.actions.FindAction("Move");
         _jumpAction = _playerInput.actions.FindAction("Jump");
         _dashAction = _playerInput.actions.FindAction("Dash");
