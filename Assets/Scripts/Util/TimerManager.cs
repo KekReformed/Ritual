@@ -9,10 +9,18 @@ public class TimerManager
     /// Add a new timer to the timer manager
     /// </summary>
     public static void AddTimer(Timer timer)
-    { ;
+    {
         Timers.Add(timer.Name,timer);
     }
 
+    /// <summary>
+    /// Checks if a timer has finished, returning true if it has false otherwise;
+    /// </summary>
+    /// <param name="TimerName">Name of the timer</param>
+    public static bool CheckTimer(string TimerName)
+    {
+        return Timers[TimerName].CurrentTime <= 0f;
+    }
     
     /// <summary>
     /// Resets a timer back to its MaxTime
@@ -20,6 +28,7 @@ public class TimerManager
     public static void ResetTimer(string timerName)
     {
         Timer timer = Timers[timerName];
+        
         timer.CurrentTime = timer.MaxTime;
     }
     

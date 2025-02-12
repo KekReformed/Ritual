@@ -9,8 +9,10 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance;
     public static PlayerMovement Movement;
     public static PlayerInput PlayerInput;
-    public float Mana;
+    public static float Mana;
 
+    [SerializeField] float StartingMana;
+    
     public TMP_Text manaText;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +24,7 @@ public class PlayerManager : MonoBehaviour
             return;
         }
 
+        Mana = StartingMana;
         Instance = this;
         Movement = GetComponent<PlayerMovement>();
         PlayerInput = GetComponent<PlayerInput>();
@@ -34,7 +37,7 @@ public class PlayerManager : MonoBehaviour
 
     public static void SetMana(float mana)
     {
-        Instance.Mana = mana;
+        Mana = mana;
         Instance.manaText.SetText(mana.ToString());
     }
 }

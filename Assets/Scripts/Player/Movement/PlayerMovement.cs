@@ -14,10 +14,7 @@ public class PlayerMovement : MonoBehaviour
     const string DashName = "Dash";
 
     readonly MovementVector _defaultVector = new MovementVector(Vector3.zero,-10);
-    Vector3 _lastMovementVector;
-    MovementVector _currentMovementVector;
-
-
+    
     Vector3 _lastMovementInput;
     Vector3 _velocity;
     
@@ -38,8 +35,9 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("The amount of time in seconds we have to wait to dash again after the last dash has ended")]
     [SerializeField] float dashCooldown;
     
-    [HideInInspector]
-    public bool grounded;
+    [HideInInspector] public bool grounded;
+    [HideInInspector] public Vector3 lastMovementVector; 
+    [HideInInspector] public MovementVector currentMovementVector;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -52,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         _characterController = GetComponent<CharacterController>();
         
         _cam = Camera.main;
-        _currentMovementVector = _defaultVector;
+        currentMovementVector = _defaultVector;
         TimerManager.AddTimer(new Timer(DashName,dashTime));
         TimerManager.AddTimer(new Timer("DashCooldown",dashCooldown + dashTime));
         Cursor.lockState = CursorLockMode.Locked;
@@ -67,18 +65,18 @@ public class PlayerMovement : MonoBehaviour
         //Decelerate us if we were moving last frame, this only gets applied if our new vector after deceleration would be faster than _currentMovementVector
         if (grounded)
         {
-            if (_lastMovementVector.x != 0) decelVector.x = _lastMovementVector.x - deceleration * _lastMovementVector.normalized.x * Time.deltaTime; 
-            if (_lastMovementVector.z != 0) decelVector.z = _lastMovementVector.z - deceleration * _lastMovementVector.normalized.z * Time.deltaTime; 
+            if (lastMovementVector.x != 0) decelVector.x = lastMovementVector.x - deceleration * lastMovementVector.normalized.x * Time.deltaTime; 
+            if (lastMovementVector.z != 0) decelVector.z = lastMovementVector.z - deceleration * lastMovementVector.normalized.z * Time.deltaTime; 
         }
         else
         {
-            if (_lastMovementVector.x != 0) decelVector.x = _lastMovementVector.x - airDeceleration * _lastMovementVector.normalized.x * Time.deltaTime; 
-            if (_lastMovementVector.z != 0) decelVector.z = _lastMovementVector.z - airDeceleration * _lastMovementVector.normalized.z * Time.deltaTime; 
+            if (lastMovementVector.x != 0) decelVector.x = lastMovementVector.x - airDeceleration * lastMovementVector.normalized.x * Time.deltaTime; 
+            if (lastMovementVector.z != 0) decelVector.z = lastMovementVector.z - airDeceleration * lastMovementVector.normalized.z * Time.deltaTime; 
         }
         
         //If deceleration would result in us actually increasing our speed (e.g. we decelrate 1.0 by 2.0 we would be going at -1.0 speed) then set our decelVector to 0;
-        if (Mathf.Sign(decelVector.x) != Mathf.Sign(_lastMovementVector.x)) decelVector.x = 0;
-        if (Mathf.Sign(decelVector.z) != Mathf.Sign(_lastMovementVector.z)) decelVector.z = 0;
+        if (Mathf.Sign(decelVector.x) != Mathf.Sign(lastMovementVector.x)) decelVector.x = 0;
+        if (Mathf.Sign(decelVector.z) != Mathf.Sign(lastMovementVector.z)) decelVector.z = 0;
         
         
         
@@ -91,11 +89,11 @@ public class PlayerMovement : MonoBehaviour
         
         MovementVector tempMoveVector = Move();
 
-        if (CheckPriority(tempMoveVector)) _currentMovementVector = tempMoveVector;
+        if (CheckPriority(tempMoveVector)) currentMovementVector = tempMoveVector;
 
-        Vector3 tempVector = _currentMovementVector.vector;
+        Vector3 tempVector = currentMovementVector.vector;
         
-        if (_currentMovementVector.applyGravity)
+        if (currentMovementVector.applyGravity)
         {
             tempVector.y += _velocity.y;
         }
@@ -105,13 +103,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //If the horizonatal speed we would get from our current vector is less than the last vector deccelerated then use the deccelerated vector rather than the new vector
-        if (Mathf.Abs(_currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
-        if (Mathf.Abs(_currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
+        if (Mathf.Abs(currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
+        if (Mathf.Abs(currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
         
         _characterController.Move(tempVector * Time.deltaTime);
 
-        _lastMovementVector = tempVector;
-        _currentMovementVector = _defaultVector;
+        lastMovementVector = tempVector;
+        currentMovementVector = _defaultVector;
     }
 
     
@@ -120,8 +118,8 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get a reference movement vector so we don't have to call the function multiple times, if we aren't currently inputting any movement ignore this
         Vector3 moveInput = _moveAction.ReadValue<Vector2>();
-        if(moveInput.magnitude < 0.1f && TimerManager.Timers[DashName].CurrentTime <= 0f) return new MovementVector(Vector3.zero, -10);
-        if (moveInput.magnitude < 0.1f && TimerManager.Timers[DashName].CurrentTime > 0f) moveInput = _lastMovementInput;
+        if(moveInput.magnitude < 0.1f && TimerManager.CheckTimer(DashName)) return new MovementVector(Vector3.zero, -10);
+        if(moveInput.magnitude < 0.1f && !TimerManager.CheckTimer(DashName)) moveInput = _lastMovementInput;
 
         bool applyGravity = true;
         int priority = 0;
@@ -135,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
 
         move.y = 0;
         
-        if (TimerManager.Timers[DashName].CurrentTime > 0f)
+        if (!TimerManager.CheckTimer(DashName))
         {
             move *= dashSpeed;
             applyGravity = false;
@@ -154,16 +152,16 @@ public class PlayerMovement : MonoBehaviour
 
     bool CheckPriority(MovementVector movementVector)
     {
-        return movementVector.priority > _currentMovementVector.priority;
+        return movementVector.priority > currentMovementVector.priority;
     }
 
     void Dash()
     {
-        if (TimerManager.Timers[DashName].CurrentTime <= 0f && _currentMovementVector.priority < 3)
+        if (TimerManager.CheckTimer(DashName) && currentMovementVector.priority < 3)
         {
-            _currentMovementVector.applyGravity = true;
+            currentMovementVector.applyGravity = true;
         }
-        if (!_dashAction.triggered || TimerManager.Timers["DashCooldown"].CurrentTime > 0f) return;
+        if (!_dashAction.triggered || !TimerManager.CheckTimer("DashCooldown")) return;
         
         TimerManager.ResetTimer(DashName);
         TimerManager.ResetTimer("DashCooldown");
