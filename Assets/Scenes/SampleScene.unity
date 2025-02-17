@@ -1470,16 +1470,7 @@ MonoBehaviour:
   deceleration: 1000
   gravityScale: 4
   jumpForce: 20
-  dashTime: 0.25
-  dashSpeed: 5
-  dashHeight: 1
-  dashCooldown: 0.5
   grounded: 0
-  lastMovementVector: {x: 0, y: 0, z: 0}
-  currentMovementVector:
-    vector: {x: 0, y: 0, z: 0}
-    applyGravity: 0
-    priority: 0
 --- !u!114 &2143499115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,7 +1610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b11b05905ae05b49a4e967f3a77abd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingMana: 80
+  startingMana: 80
+  maxMana: 80
   manaText: {fileID: 796862021}
 --- !u!114 &2143499121
 MonoBehaviour:
@@ -1634,7 +1626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainSpell: {fileID: 11400000, guid: 5e76bb1ce55032e4fb8eea9cfdb8c57b, type: 2}
-  AltSpell: {fileID: 0}
+  AltSpell: {fileID: 11400000, guid: 99600cfb3b3b9fa4ebcbe69c3f1cecc5, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

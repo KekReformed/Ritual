@@ -10,10 +10,4 @@ public abstract class Spell : ScriptableObject
     {
         PlayerManager.SetMana(PlayerManager.Mana - cost);
     }
-
-    public void RotateTowardsCameraDir()
-    {
-        float targetAngle = Mathf.Atan2(Vector3.forward.x, Vector3.forward.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
-        PlayerManager.Instance.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-    }
 }

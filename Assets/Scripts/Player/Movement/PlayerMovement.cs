@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     
     CharacterController _characterController;
     Camera _cam;
-    const string DashName = "Dash";
 
     readonly MovementVector _defaultVector = new MovementVector(Vector3.zero,-10);
     
     Vector3 _lastMovementInput;
     Vector3 _velocity;
+    
+    Vector3 _lastMovementVector; 
+    MovementVector _currentMovementVector;
     
     [Header("Basic Stats")]
     [SerializeField] float speed;
@@ -25,19 +27,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float gravityScale = 1;
     [SerializeField] float jumpForce;
     
-    [Header("Dashing")]
-    [Tooltip("How long in seconds the dash lasts")]
-    [SerializeField] float dashTime;
-    [Tooltip("The multiplier applied to normal speed whilst dashing")]
-    [SerializeField] float dashSpeed;
-    [Tooltip("The vertical velocity to be applied during the dash")] 
-    [SerializeField] float dashHeight;
-    [Tooltip("The amount of time in seconds we have to wait to dash again after the last dash has ended")]
-    [SerializeField] float dashCooldown;
-    
     [HideInInspector] public bool grounded;
-    [HideInInspector] public Vector3 lastMovementVector; 
-    [HideInInspector] public MovementVector currentMovementVector;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,9 +40,7 @@ public class PlayerMovement : MonoBehaviour
         _characterController = GetComponent<CharacterController>();
         
         _cam = Camera.main;
-        currentMovementVector = _defaultVector;
-        TimerManager.AddTimer(new Timer(DashName,dashTime));
-        TimerManager.AddTimer(new Timer("DashCooldown",dashCooldown + dashTime));
+        _currentMovementVector = _defaultVector;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -65,18 +53,18 @@ public class PlayerMovement : MonoBehaviour
         //Decelerate us if we were moving last frame, this only gets applied if our new vector after deceleration would be faster than _currentMovementVector
         if (grounded)
         {
-            if (lastMovementVector.x != 0) decelVector.x = lastMovementVector.x - deceleration * lastMovementVector.normalized.x * Time.deltaTime; 
-            if (lastMovementVector.z != 0) decelVector.z = lastMovementVector.z - deceleration * lastMovementVector.normalized.z * Time.deltaTime; 
+            if (_lastMovementVector.x != 0) decelVector.x = _lastMovementVector.x - deceleration * _lastMovementVector.normalized.x * Time.deltaTime; 
+            if (_lastMovementVector.z != 0) decelVector.z = _lastMovementVector.z - deceleration * _lastMovementVector.normalized.z * Time.deltaTime; 
         }
         else
         {
-            if (lastMovementVector.x != 0) decelVector.x = lastMovementVector.x - airDeceleration * lastMovementVector.normalized.x * Time.deltaTime; 
-            if (lastMovementVector.z != 0) decelVector.z = lastMovementVector.z - airDeceleration * lastMovementVector.normalized.z * Time.deltaTime; 
+            if (_lastMovementVector.x != 0) decelVector.x = _lastMovementVector.x - airDeceleration * _lastMovementVector.normalized.x * Time.deltaTime; 
+            if (_lastMovementVector.z != 0) decelVector.z = _lastMovementVector.z - airDeceleration * _lastMovementVector.normalized.z * Time.deltaTime; 
         }
         
         //If deceleration would result in us actually increasing our speed (e.g. we decelrate 1.0 by 2.0 we would be going at -1.0 speed) then set our decelVector to 0;
-        if (Mathf.Sign(decelVector.x) != Mathf.Sign(lastMovementVector.x)) decelVector.x = 0;
-        if (Mathf.Sign(decelVector.z) != Mathf.Sign(lastMovementVector.z)) decelVector.z = 0;
+        if (Mathf.Sign(decelVector.x) != Mathf.Sign(_lastMovementVector.x)) decelVector.x = 0;
+        if (Mathf.Sign(decelVector.z) != Mathf.Sign(_lastMovementVector.z)) decelVector.z = 0;
         
         
         
@@ -85,15 +73,13 @@ public class PlayerMovement : MonoBehaviour
         
         if (grounded && _jumpAction.triggered) Jump();
         
-        Dash();
-        
         MovementVector tempMoveVector = Move();
 
-        if (CheckPriority(tempMoveVector)) currentMovementVector = tempMoveVector;
+        if (CheckMovementVectorPriority(tempMoveVector)) _currentMovementVector = tempMoveVector;
 
-        Vector3 tempVector = currentMovementVector.vector;
+        Vector3 tempVector = _currentMovementVector.vector;
         
-        if (currentMovementVector.applyGravity)
+        if (_currentMovementVector.applyGravity)
         {
             tempVector.y += _velocity.y;
         }
@@ -103,13 +89,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //If the horizonatal speed we would get from our current vector is less than the last vector deccelerated then use the deccelerated vector rather than the new vector
-        if (Mathf.Abs(currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
-        if (Mathf.Abs(currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
+        if (Mathf.Abs(_currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
+        if (Mathf.Abs(_currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
         
         _characterController.Move(tempVector * Time.deltaTime);
 
-        lastMovementVector = tempVector;
-        currentMovementVector = _defaultVector;
+        _lastMovementVector = tempVector;
+        _currentMovementVector = _defaultVector;
     }
 
     
@@ -118,31 +104,19 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get a reference movement vector so we don't have to call the function multiple times, if we aren't currently inputting any movement ignore this
         Vector3 moveInput = _moveAction.ReadValue<Vector2>();
-        if(moveInput.magnitude < 0.1f && TimerManager.CheckTimer(DashName)) return new MovementVector(Vector3.zero, -10);
-        if(moveInput.magnitude < 0.1f && !TimerManager.CheckTimer(DashName)) moveInput = _lastMovementInput;
-
-        bool applyGravity = true;
-        int priority = 0;
+        if(moveInput.magnitude < 0.1f) return new MovementVector(Vector3.zero, -10);
         
         //Rotate towards the direction were going to move, based on the way the camera is facing
-        float targetAngle = GetAngleTowardsVector(moveInput);
+        float targetAngle = PlayerManager.GetAngleTowardsVectorFromCamera(moveInput);
         transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
         
-        //Move in the direction the camera is facing
+        //Move based on the direction the camera is facing
         Vector3 move = (Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward).normalized * speed;
 
         move.y = 0;
-        
-        if (!TimerManager.CheckTimer(DashName))
-        {
-            move *= dashSpeed;
-            applyGravity = false;
-            if(!grounded) move.y += dashHeight;
-            priority = 2;
-        }
 
         _lastMovementInput = moveInput;
-        return new MovementVector(new Vector3(move.x, move.y, move.z), priority, applyGravity);
+        return new MovementVector(new Vector3(move.x, move.y, move.z), 0, true);
     }
     
     void ApplyGravity()
@@ -150,37 +124,24 @@ public class PlayerMovement : MonoBehaviour
         _velocity.y += -9.81f * gravityScale * Time.deltaTime;
     }
 
-    bool CheckPriority(MovementVector movementVector)
+    bool CheckMovementVectorPriority(MovementVector movementVector)
     {
-        return movementVector.priority > currentMovementVector.priority;
+        return movementVector.priority > _currentMovementVector.priority;
     }
 
-    void Dash()
-    {
-        if (TimerManager.CheckTimer(DashName) && currentMovementVector.priority < 3)
-        {
-            currentMovementVector.applyGravity = true;
-        }
-        if (!_dashAction.triggered || !TimerManager.CheckTimer("DashCooldown")) return;
-        
-        TimerManager.ResetTimer(DashName);
-        TimerManager.ResetTimer("DashCooldown");
-    }
-    
-
-    /// <summary>
-    /// Gets the angle between the characters forward direction, and the way the camera is currently facing useful for correcting movement towards camera
-    /// </summary>
-    float GetAngleTowardsVector(Vector2 targetVector)
-    {
-        float targetAngle = Mathf.Atan2(targetVector.x, targetVector.y) * Mathf.Rad2Deg + _cam.transform.eulerAngles.y;
-
-        return targetAngle;
-    }
-
-    void Jump()
+    public void Jump()
     {
         grounded = false;
         _velocity.y = jumpForce;
+    }
+
+    /// <summary>
+    /// Sets the movement vector of the player, returns true if succesful and false if not
+    /// </summary>
+    public bool SetMovementVector(MovementVector movementVector)
+    {
+        if (movementVector.priority <= _currentMovementVector.priority) return false;
+        _currentMovementVector = movementVector;
+        return true;
     }
 }

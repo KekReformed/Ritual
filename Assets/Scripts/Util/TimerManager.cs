@@ -10,6 +10,7 @@ public class TimerManager
     /// </summary>
     public static void AddTimer(Timer timer)
     {
+        if (Timers.ContainsKey(timer.Name)) return;
         Timers.Add(timer.Name,timer);
     }
 
