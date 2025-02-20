@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BasicProjectileSpell", menuName = "Spells/Active/Basic Projectile")]
-public class BasicProjectileSpell : Spell
+public class BasicProjectileSpell : ActiveSpell
 {
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed;

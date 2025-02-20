@@ -3,7 +3,7 @@
 public class PassiveSpell : Spell
 {
 
-    [HideInInspector] public bool enabled = false; 
+    [HideInInspector] public bool enabled; 
         
     public override void Use()
     {
@@ -15,15 +15,15 @@ public class PassiveSpell : Spell
     {
         if (PlayerManager.Mana < cost) return;
         
-        PlayerManager.Mana -= cost;
         PlayerManager.MaxMana -= cost;
+        PlayerManager.Mana -= cost;
         enabled = true;
     }
 
     public virtual void Disable()
     {
-        PlayerManager.Mana += cost;
         PlayerManager.MaxMana += cost;
+        PlayerManager.Mana += cost;
         enabled = false;
     }
 }

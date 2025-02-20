@@ -7,14 +7,11 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput _playerInput;
     InputAction _moveAction;
     InputAction _jumpAction;
-    InputAction _dashAction;
     
     CharacterController _characterController;
-    Camera _cam;
 
     readonly MovementVector _defaultVector = new MovementVector(Vector3.zero,-10);
     
-    Vector3 _lastMovementInput;
     Vector3 _velocity;
     
     Vector3 _lastMovementVector; 
@@ -27,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float gravityScale = 1;
     [SerializeField] float jumpForce;
     
-    [HideInInspector] public bool grounded;
+    //[HideInInspector] 
+    public bool grounded;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,11 +33,9 @@ public class PlayerMovement : MonoBehaviour
         _playerInput = PlayerManager.PlayerInput;
         _moveAction = _playerInput.actions.FindAction("Move");
         _jumpAction = _playerInput.actions.FindAction("Jump");
-        _dashAction = _playerInput.actions.FindAction("Dash");
         
         _characterController = GetComponent<CharacterController>();
         
-        _cam = Camera.main;
         _currentMovementVector = _defaultVector;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -114,8 +110,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = (Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward).normalized * speed;
 
         move.y = 0;
-
-        _lastMovementInput = moveInput;
+        
         return new MovementVector(new Vector3(move.x, move.y, move.z), 0, true);
     }
     

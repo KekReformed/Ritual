@@ -27,15 +27,14 @@ public class PlayerSpellcasting : MonoBehaviour
 
     void CastSpell(Spell spell)
     {
-        if (spell.cost > PlayerManager.Mana) return;
-
-
         if (!TimerManager.Timers.ContainsKey(spell.name))
         {
             TimerManager.AddTimer(new Timer(spell.name,spell.cooldown));
             TimerManager.ResetTimer(spell.name);
             
             spell.Use();
+            
+            return;
         }
         
         if (!TimerManager.CheckTimer(spell.name)) return;

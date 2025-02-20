@@ -1,7 +1,9 @@
-﻿namespace Player.Spells
+﻿public class ActiveSpell : Spell
 {
-    public class ActiveSpell
+    public override void Use()
     {
-        
+        if(PlayerManager.Mana < cost) return;
+        PlayerManager.Mana -= cost;
     }
 }
+
