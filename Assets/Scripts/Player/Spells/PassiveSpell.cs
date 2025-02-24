@@ -1,26 +1,36 @@
 ﻿using UnityEngine;
+using UnityEditor;
 
 public class PassiveSpell : Spell
 {
 
-    [HideInInspector] public bool enabled; 
-        
-    public override void Use()
+    [SerializeField] bool enabled;
+
+    public virtual void Reset()
+    {
+        enabled = false;
+    }
+    
+    public override bool Use()
     {
         if (enabled) Disable();
         else Enable();
+
+        return true;
     }
 
-    public virtual void Enable()
+    protected virtual bool Enable()
     {
-        if (PlayerManager.Mana < cost) return;
+        if (PlayerManager.Mana < cost) return false;
         
         PlayerManager.MaxMana -= cost;
         PlayerManager.Mana -= cost;
         enabled = true;
+
+        return true;
     }
 
-    public virtual void Disable()
+    protected virtual void Disable()
     {
         PlayerManager.MaxMana += cost;
         PlayerManager.Mana += cost;

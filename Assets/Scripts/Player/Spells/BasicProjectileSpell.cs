@@ -6,9 +6,9 @@ public class BasicProjectileSpell : ActiveSpell
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed;
     
-    public override void Use()
+    public override bool Use()
     {
-        base.Use();
+        if (!base.Use()) return false;
         float targetAngle = PlayerManager.GetAngleTowardsVectorFromCamera(Vector3.forward);
         
         PlayerManager.Instance.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
@@ -16,5 +16,7 @@ public class BasicProjectileSpell : ActiveSpell
         GameObject fireballObject = Instantiate(projectilePrefab,PlayerManager.Instance.transform.position + PlayerManager.Instance.transform.rotation * Vector3.forward.normalized, Quaternion.identity);
         Rigidbody rb = fireballObject.GetComponent<Rigidbody>();
         rb.linearVelocity = PlayerManager.Instance.transform.rotation * Vector3.forward.normalized * projectileSpeed;
+
+        return true;
     }
 }

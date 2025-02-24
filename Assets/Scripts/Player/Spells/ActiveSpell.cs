@@ -1,9 +1,10 @@
 ﻿public class ActiveSpell : Spell
 {
-    public override void Use()
+    public override bool Use()
     {
-        if(PlayerManager.Mana < cost) return;
+        if(PlayerManager.Mana < cost) return false;
         PlayerManager.Mana -= cost;
+        return true;
     }
 }
 

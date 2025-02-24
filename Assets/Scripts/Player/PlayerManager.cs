@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, IDamageable
 {
     public static PlayerManager Instance;
     public static PlayerMovement Movement;
@@ -13,6 +13,9 @@ public class PlayerManager : MonoBehaviour
     static float _mana;
     static float _maxMana;
 
+    static float _health;
+    static float _maxHealth;
+
     public static float Mana
     {
         get => _mana;
@@ -20,24 +23,34 @@ public class PlayerManager : MonoBehaviour
         {
             _mana = value;
 
-            Instance.manaText.SetText($"{_mana}/{_maxMana}");
+            SetManaText();
         }
     }
 
+    
     public static float MaxMana
     {
         get => _maxMana;
         set
         {
             _maxMana = value;
-            Instance.manaText.SetText($"{_mana}/{_maxMana}");
+            SetManaText();
         }
     }
 
+    static void SetManaText()
+    {
+        Instance.manaText.SetText($"{Mathf.Round(_mana)}/{Mathf.Round(_maxMana)}");
+    }
+
     public TMP_Text manaText;
+    public TMP_Text healthText;
     
-    [SerializeField] float _startingMana;
-    [SerializeField] float _startingMaxMana;
+    [SerializeField] float startingMana;
+    [SerializeField] float startingMaxMana;
+    
+    [SerializeField] float startingHp;
+    [SerializeField] float startingMaxHp;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -49,8 +62,12 @@ public class PlayerManager : MonoBehaviour
         }
         Instance = this;
 
-        Mana = _startingMana;
-        MaxMana = _startingMaxMana;
+        Mana = startingMana;
+        MaxMana = startingMaxMana;
+        
+        _health = startingHp;
+        _maxHealth = startingMaxHp;
+        
         Movement = GetComponent<PlayerMovement>();
         PlayerInput = GetComponent<PlayerInput>();
     }
@@ -68,5 +85,12 @@ public class PlayerManager : MonoBehaviour
         float targetAngle = Mathf.Atan2(targetVector.x, targetVector.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
 
         return targetAngle;
+    }
+    
+    public void Damage(float damage)
+    {
+        _health -= damage;
+        if(_health <= 0) Debug.Log("Your dead!");
+        Instance.healthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
     }
 }

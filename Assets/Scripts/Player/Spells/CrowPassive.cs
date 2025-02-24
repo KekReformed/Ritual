@@ -5,24 +5,22 @@ using UnityEngine.InputSystem;
 [CreateAssetMenu(fileName = "CrowPassive", menuName = "Spells/Passive/Crow Passive")]
 public class CrowPassive : PassiveSpell
 {
-    [SerializeField] private int midairJumps;
-    [SerializeField] private float dashCooldown;
-    [SerializeField] private float dashSpeed;
+    [SerializeField] int midairJumps;
+    [SerializeField] float dashCooldown;
+    [SerializeField] float dashSpeed;
     
-    private InputAction _dashAction;
-    private InputAction _moveAction;
-    private InputAction _jumpAction;
+    CrowPassiveMono _component;
 
-    private CrowPassiveMono _component;
-
-    public override void Enable()
+    protected override bool Enable()
     {
-        base.Enable();
+        if(!base.Enable()) return false;
         _component = PlayerManager.Instance.AddComponent<CrowPassiveMono>();
         _component.Setup(midairJumps,dashCooldown,dashSpeed);
+        
+        return true;
     }
 
-    public override void Disable()
+    protected override void Disable()
     {
         base.Disable();
         Destroy(_component);
