@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class PlayerManager : MonoBehaviour, IDamageable
@@ -90,7 +91,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public void Damage(float damage)
     {
         _health -= damage;
-        if(_health <= 0) Debug.Log("Your dead!");
+        if(_health <= 0) SceneManager.LoadScene(0);
         Instance.healthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
     }
 }
