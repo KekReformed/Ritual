@@ -91,7 +91,11 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public void Damage(float damage)
     {
         _health -= damage;
-        if(_health <= 0) SceneManager.LoadScene(0);
+        if (_health <= 0)
+        {
+            SceneManager.LoadScene(0);
+            Cursor.lockState = CursorLockMode.None;
+        }
         Instance.healthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
     }
 }

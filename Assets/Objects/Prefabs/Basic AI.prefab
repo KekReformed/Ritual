@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 8907251683880683656}
   - component: {fileID: 2940648698648446511}
   - component: {fileID: 6374381037255113545}
+  - component: {fileID: 743095262439838655}
   m_Layer: 10
   m_Name: Basic AI
   m_TagString: AI
@@ -206,6 +207,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &743095262439838655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7391123829489111487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e08814f33bd4bccb068920f667ae27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  biteInterval: 0.5
+  biteDamage: 10
 --- !u!1001 &2183452740211021290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -289,9 +305,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ca267ea38c3cd3479cc302a5901660d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4634594437798719178}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ca267ea38c3cd3479cc302a5901660d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9194712104471984599}
   m_SourcePrefab: {fileID: 100100000, guid: 7ca267ea38c3cd3479cc302a5901660d, type: 3}
 --- !u!1 &1336521679952455867 stripped
 GameObject:
@@ -319,22 +332,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.09, y: 2.9, z: 1}
   m_Center: {x: 0, y: 1.4, z: 0}
---- !u!114 &9194712104471984599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336521679952455867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e08814f33bd4bccb068920f667ae27c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  biteCollider: {fileID: 5223478594111816009}
-  biteInterval: 0.5
-  biteDamage: 10
 --- !u!4 &1857620289221620225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ca267ea38c3cd3479cc302a5901660d, type: 3}
