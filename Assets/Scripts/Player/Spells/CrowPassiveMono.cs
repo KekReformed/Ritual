@@ -10,18 +10,19 @@ public class CrowPassiveMono : MonoBehaviour
     InputAction _moveAction;
     InputAction _jumpAction;
     int _jumps;
+    bool _dashing;
+    MovementVector _movementVector;
 
     [SerializeField] int maxMidairJumps;
-    [SerializeField] float dashCooldown;
     [SerializeField] float dashSpeed;
 
-    public void Setup(int maxMidairJumps, float dashCooldown, float dashSpeed)
+    public void Setup(int maxMidairJumps, float dashCooldown, float dashSpeed, float dashLength)
     {
-        TimerManager.AddTimer(new Timer("DashCooldown", dashCooldown));
+        TimerManager.AddTimer(new Timer("DashCooldown", dashCooldown + dashLength));
+        TimerManager.AddTimer(new Timer("DashLength", dashLength));
         
         
         this.maxMidairJumps = maxMidairJumps;
-        this.dashCooldown = dashCooldown;
         this.dashSpeed = dashSpeed;
 
         _moveAction = PlayerManager.PlayerInput.actions.FindAction("Move");
@@ -34,6 +35,16 @@ public class CrowPassiveMono : MonoBehaviour
         if (_dashAction.triggered) Dash();
         if (_jumpAction.triggered) DoubleJump();
         if (PlayerManager.Movement.grounded) _jumps = maxMidairJumps;
+        
+        if (_dashing)
+        {
+            PlayerManager.Movement.SetMovementVector(_movementVector);
+
+            if (TimerManager.CheckTimer("DashLength"))
+            {
+                _dashing = false;
+            }
+        }
     }
 
     void Dash()
@@ -43,10 +54,12 @@ public class CrowPassiveMono : MonoBehaviour
         float targetAngle = PlayerManager.GetAngleTowardsVectorFromCamera(_moveAction.ReadValue<Vector2>());
 
         TimerManager.ResetTimer("DashCooldown");
+        TimerManager.ResetTimer("DashLength");
 
         Vector3 move = (Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward).normalized * dashSpeed;
 
-        PlayerManager.Movement.SetMovementVector(new MovementVector(move, 1, false));
+        _movementVector =  new MovementVector(move, 1, false);
+        _dashing = true;
     }
 
     void DoubleJump()

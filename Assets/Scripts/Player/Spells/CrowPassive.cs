@@ -8,6 +8,7 @@ public class CrowPassive : PassiveSpell
     [SerializeField] int midairJumps;
     [SerializeField] float dashCooldown;
     [SerializeField] float dashSpeed;
+    [SerializeField] float dashLength;
     
     CrowPassiveMono _component;
 
@@ -15,7 +16,7 @@ public class CrowPassive : PassiveSpell
     {
         if(!base.Enable()) return false;
         _component = PlayerManager.Instance.AddComponent<CrowPassiveMono>();
-        _component.Setup(midairJumps,dashCooldown,dashSpeed);
+        _component.Setup(midairJumps,dashCooldown,dashSpeed,dashLength);
         
         return true;
     }

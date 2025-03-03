@@ -16,5 +16,6 @@ MonoBehaviour:
   cooldown: 0
   enabled: 0
   midairJumps: 1
-  dashCooldown: 0.75
-  dashSpeed: 40
+  dashCooldown: 0.5
+  dashSpeed: 30
+  dashLength: 0.25

@@ -1749,7 +1749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manaText: {fileID: 1048099132}
   healthText: {fileID: 576373361}
-  startingMana: 0
+  startingMana: 80
   startingMaxMana: 80
   startingHp: 100
   startingMaxHp: 100
@@ -1806,7 +1806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7791486788655378091, guid: b69a22a180d71b944b320bf24412c70a, type: 3}
+  - {fileID: 6664358993437552698, guid: 595c929bd49be4b4c8427e9c9fa115aa, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
