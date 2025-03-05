@@ -16,7 +16,7 @@ public class ZapSpellMono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Color color = new Color(_lr.startColor.r,_lr.startColor.g,_lr.startColor.b, _lifetime / _maxLifetime);
+        Color color = StaticUtils.fadeColor(_lr.startColor, _lifetime, _maxLifetime);
         
         _lr.startColor = color;
         _lr.endColor = color;
