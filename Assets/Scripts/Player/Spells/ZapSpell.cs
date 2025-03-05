@@ -17,9 +17,13 @@ public class ZapSpell : ActiveSpell
         Ray targetRay = Camera.main.ScreenPointToRay(screenCentre);
         RaycastHit hit;
 
-        Physics.Raycast(targetRay, out hit, 10000f, targetableObjects);
+        Ray ray;
         
-        Ray ray = new Ray(PlayerManager.Instance.transform.position, (hit.point - PlayerManager.Instance.transform.position).normalized);
+        if (Physics.Raycast(targetRay, out hit, 10000f, targetableObjects))
+        {
+            ray = new Ray(PlayerManager.Instance.transform.position, (hit.point - PlayerManager.Instance.transform.position).normalized);
+        }
+        else return false;
         
         if (Physics.Raycast(ray, out hit, 10000f,targetableObjects))
         {

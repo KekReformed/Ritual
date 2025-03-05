@@ -1825,8 +1825,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manaText: {fileID: 1048099132}
   healthText: {fileID: 576373361}
-  startingMana: 80
-  startingMaxMana: 80
+  startingMana: 99999
+  startingMaxMana: 99999
   startingHp: 100
   startingMaxHp: 100
 --- !u!114 &1206075215
