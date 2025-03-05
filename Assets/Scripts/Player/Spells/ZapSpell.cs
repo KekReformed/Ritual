@@ -14,8 +14,12 @@ public class ZapSpell : ActiveSpell
         if (!base.Use()) return false;
 
         Vector2 screenCentre = new Vector2(Screen.width / 2, Screen.height / 2);
-        Ray ray = Camera.main.ScreenPointToRay(screenCentre);
+        Ray targetRay = Camera.main.ScreenPointToRay(screenCentre);
         RaycastHit hit;
+
+        Physics.Raycast(targetRay, out hit, 10000f, targetableObjects);
+        
+        Ray ray = new Ray(PlayerManager.Instance.transform.position, (hit.point - PlayerManager.Instance.transform.position).normalized);
         
         if (Physics.Raycast(ray, out hit, 10000f,targetableObjects))
         {
