@@ -4,7 +4,7 @@ public class SpellLifetime : MonoBehaviour
 {
 
     [HideInInspector] public float lifeTime;
-    [SerializeField] [Tooltip("Lifetime in seconds before deleting this object")]float maxLifetime;
+    [SerializeField] [Tooltip("Lifetime in seconds before deleting this object")] float maxLifetime;
     
     void Update()
     {

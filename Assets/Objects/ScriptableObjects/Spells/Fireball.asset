@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87bc8bef275d7f543a50018480b007f0, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
-  cost: 20
+  cost: 10
   cooldown: 1
   projectilePrefab: {fileID: 3924394950785101786, guid: ccb158d2cf59eee47a36febe793e54c7, type: 3}
-  projectileSpeed: 10
+  projectileSpeed: 20
+  damage: 15

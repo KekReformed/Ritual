@@ -1791,7 +1791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c4796f83e3cd9443ba6153b7a0a746a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainSpell: {fileID: 11400000, guid: 5e76bb1ce55032e4fb8eea9cfdb8c57b, type: 2}
+  MainSpell: {fileID: 11400000, guid: 1c55f84cddd93564d87857e3a4f260f9, type: 2}
   AltSpell: {fileID: 11400000, guid: 99600cfb3b3b9fa4ebcbe69c3f1cecc5, type: 2}
 --- !u!114 &1206075213
 MonoBehaviour:
