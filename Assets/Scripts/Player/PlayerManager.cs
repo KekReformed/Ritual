@@ -52,7 +52,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     
     [SerializeField] float startingHp;
     [SerializeField] float startingMaxHp;
-    [SerializeField] [Range(0.01f,0.5f)] float manaRegenPercent;
+    [SerializeField] [Range(0.01f,0.2f)] float manaRegenPercent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()

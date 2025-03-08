@@ -1827,7 +1827,7 @@ MonoBehaviour:
   startingMaxMana: 100
   startingHp: 100
   startingMaxHp: 100
-  manaRegenPercent: 0.01
+  manaRegenPercent: 0.05
 --- !u!114 &1206075215
 MonoBehaviour:
   m_ObjectHideFlags: 0
