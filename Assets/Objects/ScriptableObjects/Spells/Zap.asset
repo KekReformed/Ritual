@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 5
   cooldown: 0.75
+  automatic: 1
   targetableObjects:
     serializedVersion: 2
     m_Bits: 1153
   zapPrefab: {fileID: 7332357382414598991, guid: 8395fef49fa53df4aac50de248dd433d, type: 3}
   lifetime: 0.5
-  damage: 5
+  damage: 4
+  range: 30

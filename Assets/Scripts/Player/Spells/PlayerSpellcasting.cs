@@ -22,7 +22,9 @@ public class PlayerSpellcasting : MonoBehaviour
     void Update()
     {
         if (_attackAction.triggered) CastSpell(MainSpell);
+        else if (_attackAction.ReadValue<float>() > 0 && MainSpell.automatic) CastSpell(MainSpell);
         if (_altAttackAction.triggered) CastSpell(AltSpell);
+        else if (_altAttackAction.ReadValue<float>() > 0 && AltSpell.automatic) CastSpell(AltSpell);
     }
 
     void CastSpell(Spell spell)

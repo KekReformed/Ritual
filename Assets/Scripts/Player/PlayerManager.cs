@@ -52,6 +52,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     
     [SerializeField] float startingHp;
     [SerializeField] float startingMaxHp;
+    [SerializeField] [Range(0.01f,0.5f)] float manaRegenPercent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -76,6 +77,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     void Update()
     {
         TimerManager.UpdateTimers();
+        Mana = Mathf.Min(_maxMana, _mana + _maxMana * manaRegenPercent * Time.deltaTime);
     }
     
     /// <summary>

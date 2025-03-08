@@ -4,6 +4,7 @@ public abstract class Spell : ScriptableObject
 {
     [SerializeField] public float cost;
     [Tooltip("Cooldown in seconds")] public float cooldown;
+    public bool automatic;
     
     public virtual bool Use()
     {

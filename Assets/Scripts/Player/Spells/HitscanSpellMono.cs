@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ZapSpellMono : MonoBehaviour
+public class HitscanSpellMono : MonoBehaviour
 {
     float _lifetime;
     float _maxLifetime;
