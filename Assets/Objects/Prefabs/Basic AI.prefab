@@ -235,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   pathfinding: {fileID: 0}
+  enemyID: Wolf
   damageText: {fileID: 5884658635525457602, guid: 8f55d77c0ff444d4a9f8cde833194602, type: 3}
   damageTextOffset: 1
   biteInterval: 0.5

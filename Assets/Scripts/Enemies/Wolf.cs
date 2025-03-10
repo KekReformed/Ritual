@@ -15,7 +15,6 @@ public class Wolf : BasicEnemy
 
     void OnTriggerStay(Collider other)
     {
-        Debug.Log("Trigger");
         if (_biteTimer <= 0)
         {
             IDamageable damageable = other.GetComponent<IDamageable>();

@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     ResourceBar _passiveManaBar;
 
 
-    void Awake()
+    void Start()
     {
         foreach (ResourceBar bar in ResourceBarList)
         {

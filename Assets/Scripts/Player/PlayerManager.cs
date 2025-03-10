@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public static PlayerMovement Movement;
     public static PlayerInput PlayerInput;
     public static float PassiveManaUsage;
+    public static PlayerStats PlayerStats = new PlayerStats();
     
     static float _mana;
     static float _maxMana;
@@ -60,8 +61,14 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] float startingHp;
     [SerializeField] float startingMaxHp;
     [SerializeField] [Range(0.01f,0.2f)] float manaRegenPercent;
-    
-    void Awake()
+
+    private void Awake()
+    {
+        Movement = GetComponent<PlayerMovement>();
+        PlayerInput = GetComponent<PlayerInput>();
+    }
+
+    void Start()
     {
         if (Instance != null)
         {
@@ -76,9 +83,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
         
         _health = startingHp;
         _maxHealth = startingMaxHp;
-        
-        Movement = GetComponent<PlayerMovement>();
-        PlayerInput = GetComponent<PlayerInput>();
     }
 
     void Update()
