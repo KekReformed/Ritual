@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public static PlayerManager Instance;
     public static PlayerMovement Movement;
     public static PlayerInput PlayerInput;
+    public static float PassiveManaUsage;
     
     static float _mana;
     static float _maxMana;
@@ -24,7 +25,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
         {
             _mana = value;
 
-            SetManaText();
+            SetManaUI();
         }
     }
 
@@ -34,14 +35,20 @@ public class PlayerManager : MonoBehaviour, IDamageable
         get => _maxMana;
         set
         {
+            if (_maxMana >= value) PassiveManaUsage = Mathf.Abs(value - _maxMana);
+            else PassiveManaUsage -= (value - _maxMana);
+
             _maxMana = value;
-            SetManaText();
+            SetManaUI();
         }
     }
 
-    static void SetManaText()
+    static void SetManaUI()
     {
         Instance.manaText.SetText($"{Mathf.Round(_mana)}/{Mathf.Round(_maxMana)}");
+        
+        UIManager.ResourceBars["Mana"].UpdateResource(Mana,UIManager.ResourceBars["PassiveMana"].rect.rect.width * UIManager.ResourceBars["PassiveMana"].scale);
+        UIManager.ResourceBars["PassiveMana"].UpdateResource(PassiveManaUsage);
     }
 
     public TMP_Text manaText;
@@ -53,8 +60,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] float startingHp;
     [SerializeField] float startingMaxHp;
     [SerializeField] [Range(0.01f,0.2f)] float manaRegenPercent;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Awake()
     {
         if (Instance != null)
@@ -66,6 +72,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
         Mana = startingMana;
         MaxMana = startingMaxMana;
+        PassiveManaUsage = 0;
         
         _health = startingHp;
         _maxHealth = startingMaxHp;
@@ -99,5 +106,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
             Cursor.lockState = CursorLockMode.None;
         }
         Instance.healthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
+        UIManager.ResourceBars["Health"].UpdateResource(_health);
     }
 }
