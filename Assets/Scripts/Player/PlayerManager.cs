@@ -5,6 +5,14 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
+
+enum things
+{
+    thing,
+    otherthing,
+    joemama
+}
+
 public class PlayerManager : MonoBehaviour, IDamageable
 {
     public static PlayerManager Instance;
@@ -48,8 +56,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
     {
         Instance.manaText.SetText($"{Mathf.Round(_mana)}/{Mathf.Round(_maxMana)}");
         
-        UIManager.ResourceBars["Mana"].UpdateResource(Mana,UIManager.ResourceBars["PassiveMana"].rect.rect.width * UIManager.ResourceBars["PassiveMana"].scale);
-        UIManager.ResourceBars["PassiveMana"].UpdateResource(PassiveManaUsage);
+        UIManager.ResourceBars["Mana"].UpdateResource(Mana, MaxMana);
+        UIManager.ResourceBars["PassiveMana"].UpdateResource(PassiveManaUsage, MaxMana);
     }
 
     public TMP_Text manaText;
@@ -110,6 +118,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
             Cursor.lockState = CursorLockMode.None;
         }
         Instance.healthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
-        UIManager.ResourceBars["Health"].UpdateResource(_health);
+        UIManager.ResourceBars["Health"].UpdateResource(_health, _maxHealth);
     }
 }
