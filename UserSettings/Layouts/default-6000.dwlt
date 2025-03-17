@@ -403,8 +403,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Animation\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1467
-    y: 24
+    x: 1466
+    y: 79
     width: 453
     height: 907
   m_SerializedDataModeController:
@@ -1252,9 +1252,9 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     m_Target: {x: 0.05081365, y: 0.93342143, z: -0.14610918, w: 0.32386166}
     speed: 2
-    m_Value: {x: 0.05081365, y: 0.93342143, z: -0.14610918, w: 0.32386166}
+    m_Value: {x: 0.2868615, y: 0.55906904, z: -0.21447344, w: 0.7477698}
   m_Size:
-    m_Target: 2.1854749
+    m_Target: 1.3692707
     speed: 2
     m_Value: 2.1854749
 =======
