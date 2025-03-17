@@ -5,9 +5,9 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     public static Quest Quest;
-    [SerializeField] private Quest startQuest;
+    [SerializeField] Quest startQuest;
 
-    private void Start()
+    void Start()
     {
         Quest = startQuest;
     }

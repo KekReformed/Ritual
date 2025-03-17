@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     
     Vector3 _lastMovementVector; 
     MovementVector _currentMovementVector;
+
+    Animator _animator;
     
     [Header("Basic Stats")]
     [SerializeField] float speed;
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         _playerInput = PlayerManager.PlayerInput;
         _moveAction = _playerInput.actions.FindAction("Move");
         _jumpAction = _playerInput.actions.FindAction("Jump");
+        _animator = GetComponent<Animator>();
         
         _characterController = GetComponent<CharacterController>();
         
@@ -45,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 decelVector = Vector3.zero;
         
-        
+        _animator.SetFloat("Move",_moveAction.ReadValue<Vector2>().magnitude);
         //Decelerate us if we were moving last frame, this only gets applied if our new vector after deceleration would be faster than _currentMovementVector
         if (grounded)
         {

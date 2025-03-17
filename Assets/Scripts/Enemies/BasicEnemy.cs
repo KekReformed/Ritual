@@ -20,12 +20,14 @@ public class BasicEnemy : MonoBehaviour, IDamageable
     public void Damage(float damage)
     {
         health -= damage;
+        
         if (health <= 0)
         {
             Destroy(gameObject);
             PlayerManager.PlayerStats.IncrementStat(enemyID,"Kills");
             QuestManager.CheckKillObjectives();
         }
+        
         pathfinding.agent.SetDestination(PlayerManager.Instance.transform.position);
 
         GameObject damageTextObject = Instantiate(damageText, transform.position + new Vector3(0,damageTextOffset,0), Quaternion.identity);
