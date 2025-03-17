@@ -10,6 +10,6 @@ public class MainMenu : MonoBehaviour
 
     public void feedbackLink()
     {
-        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLScnBVXONhI0TMRlSM8X93e1X44rf1I1IBHEZ191X4PMsSMddg/viewform");
+        Application.OpenURL("https://docs.google.com/forms/d/e/1FAIpQLSdCDPdkMLEg8x65815IKpQETpNWcZ7BFnSumGk3pCoX_z7FNw/viewform");
     }
 }

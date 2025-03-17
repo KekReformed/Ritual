@@ -20,9 +20,16 @@ public class CameraTarget : MonoBehaviour
     void Update()
     {
         _targetPosition = _player.position + offset;
-        
-        _velocity = (_targetPosition - transform.position) * Time.deltaTime * followSpeed * Mathf.Min(Vector3.Distance(_targetPosition, transform.position), 10);
+        float distance = Vector3.Distance(_targetPosition, transform.position);
+
+        if (distance > 50)
+        {
+            transform.position = _targetPosition;
+            return;
+        }
+        _velocity = (_targetPosition - transform.position) * Time.deltaTime * followSpeed * Mathf.Min(distance, 10);
         _velocity.y *= verticalMultiplier;
+
         transform.position += _velocity;
     }
 }

@@ -73,17 +73,18 @@ public class PlayerManager : MonoBehaviour, IDamageable
     private void Awake()
     {
         Movement = GetComponent<PlayerMovement>();
-        PlayerInput = GetComponent<PlayerInput>();
-    }
-
-    void Start()
-    {
+        PlayerInput = GetComponent<PlayerInput>();        
         if (Instance != null)
         {
             Debug.LogError("Multiple player managers! there should only be 1!");
             return;
         }
         Instance = this;
+    }
+
+    void Start()
+    {
+
 
         Mana = startingMana;
         MaxMana = startingMaxMana;
