@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c4dbc319e94708a216c28d9b81744d, type: 3}
   m_Name: Crow Form
   m_EditorClassIdentifier: 
-  cost: 20
+  cost: 40
   cooldown: 0
   automatic: 0
   enabled: 0
