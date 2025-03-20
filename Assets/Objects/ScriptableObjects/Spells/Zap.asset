@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6be50460026554ab01d0bd996fb1ce, type: 3}
   m_Name: Zap
   m_EditorClassIdentifier: 
-  cost: 10
+  cost: 15
   cooldown: 0.75
   automatic: 1
   targetableObjects:

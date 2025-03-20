@@ -5,14 +5,6 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
-
-enum things
-{
-    thing,
-    otherthing,
-    joemama
-}
-
 public class PlayerManager : MonoBehaviour, IDamageable
 {
     public static PlayerManager Instance;
@@ -23,7 +15,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     
     static float _mana;
     static float _maxMana;
-
+    
     static float _health;
     static float _maxHealth;
 
@@ -34,10 +26,9 @@ public class PlayerManager : MonoBehaviour, IDamageable
         {
             _mana = value;
 
-            SetManaUI();
+            UIManager.SetManaUI(_mana,_maxMana,PassiveManaUsage);
         }
     }
-
     
     public static float MaxMana
     {
@@ -48,20 +39,9 @@ public class PlayerManager : MonoBehaviour, IDamageable
             else PassiveManaUsage -= (value - _maxMana);
 
             _maxMana = value;
-            SetManaUI();
+            UIManager.SetManaUI(_mana,_maxMana,PassiveManaUsage);
         }
     }
-
-    static void SetManaUI()
-    {
-        Instance.manaText.SetText($"{Mathf.Round(_mana)}/{Mathf.Round(_maxMana)}");
-        
-        UIManager.ResourceBars["Mana"].UpdateResource(Mana, MaxMana);
-        UIManager.ResourceBars["PassiveMana"].UpdateResource(PassiveManaUsage, MaxMana);
-    }
-
-    public TMP_Text manaText;
-    public TMP_Text healthText;
     
     [SerializeField] float startingMana;
     [SerializeField] float startingMaxMana;
@@ -70,7 +50,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] float startingMaxHp;
     [SerializeField] [Range(0.01f,0.2f)] float manaRegenPercent;
 
-    private void Awake()
+    void Awake()
     {
         Movement = GetComponent<PlayerMovement>();
         PlayerInput = GetComponent<PlayerInput>();        
@@ -84,8 +64,6 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     void Start()
     {
-
-
         Mana = startingMana;
         MaxMana = startingMaxMana;
         PassiveManaUsage = 0;
@@ -97,7 +75,10 @@ public class PlayerManager : MonoBehaviour, IDamageable
     void Update()
     {
         TimerManager.UpdateTimers();
-        Mana = Mathf.Min(_maxMana, _mana + _maxMana * manaRegenPercent * Time.deltaTime);
+        float manaRegen = _maxMana * manaRegenPercent;
+        
+        UIManager.ManaRegenText.SetText($"+{Mathf.Round(manaRegen * 100) / 100}/s");
+        Mana = Mathf.Min(_maxMana, _mana + manaRegen * Time.deltaTime);
     }
     
     /// <summary>
@@ -118,7 +99,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
             SceneManager.LoadScene(0);
             Cursor.lockState = CursorLockMode.None;
         }
-        Instance.healthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
+        UIManager.HealthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
         UIManager.ResourceBars["Health"].UpdateResource(_health, _maxHealth);
     }
 }

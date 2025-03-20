@@ -26,4 +26,9 @@ public class ResourceBar : MonoBehaviour
 
         image.fillAmount = scale;
     }
+
+    public void SetScale(float scale)
+    {
+        image.fillAmount = scale;
+    }
 }
