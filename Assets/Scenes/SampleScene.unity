@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.43137258, g: 0.7019608, b: 0.78823537, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.0045
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 59573b088aaea0442bf29e0a0e9d1339, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: baee66351a42d6c46b7b9ff640e80d8d, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &23304054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 536.14594
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 569.3915
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
 --- !u!1 &88274982
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +222,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followSpeed: 10
   verticalMultiplier: 3
+--- !u!1001 &91737422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 273.01376
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000011444092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 493.65524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_Name
+      value: Wooden fence Ritual (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
 --- !u!1 &94880262
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 94880262}
   serializedVersion: 2
   m_LocalRotation: {x: 0.052577298, y: -0.000000023491353, z: 0.0000000012368224, w: 0.9986169}
-  m_LocalPosition: {x: 0, y: 1.5035291, z: -4.7685847}
+  m_LocalPosition: {x: 270.3, y: 49.04353, z: 221.83142}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -199,6 +313,633 @@ Transform:
   - {fileID: 88274983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &141604741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 282.98672
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 397.47107
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &154018552
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 559.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 465.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &161161293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 582.7694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 251.34485
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &174063826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 441.4124
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 279.4655
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &234762415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 260.09598
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 205.83446
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &242381409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 570.4244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 457.73737
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9752782
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22098051
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -25.533
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_Name
+      value: Wooden fence Ritual (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+--- !u!1001 &264803751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 189.19868
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000011444092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 483.37363
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_Name
+      value: Wooden fence Ritual
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+--- !u!1001 &277964027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 239.72481
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.78575516
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 533.3876
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &301250377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 268.06616
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 384.24496
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &316712872
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 538.9086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 221.59546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &325742180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 247.6975
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 218.76793
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +1027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.000000037201378, y: 0.00000002337989, z: -0.0000000024687505, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -369,7 +1110,292 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
---- !u!1 &381954414
+--- !u!1001 &366561362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 274.42438
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 486.43082
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_Name
+      value: Wooden fence Ritual (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+--- !u!1001 &371093995
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 607.0488
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 475.38986
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9749414
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22246197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -25.707
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_Name
+      value: Wooden fence Ritual (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+--- !u!1001 &386093364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 253.99348
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000011444092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 374.26947
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &397862172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 243.7511
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000011444092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 516.8973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &403460843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 431.93823
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 396.46686
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,8 +1473,487 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &449284166
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &410087042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
+--- !u!1001 &471520973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 247.34529
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 230.46132
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &478392573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 558.8906
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 575.21765
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &516724629
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 247.52727
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000008583069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 205.69133
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &547084960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 251.8258
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 184.47319
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &589718297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 267.26666
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39443588
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 363.8368
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &636074625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 416.54004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 277.33282
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &768443076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 534.64197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 236.7824
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &808153338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 602.3574
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 496.2361
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,287 +2051,405 @@ RectTransform:
   - {fileID: 482295833}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!1 &482295832
-GameObject:
+--- !u!1001 &836906300
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 482295833}
-  - component: {fileID: 482295835}
-  - component: {fileID: 482295834}
-  m_Layer: 5
-  m_Name: Health
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &482295833
-RectTransform:
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 233.03122
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 200.14302
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &840681586
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482295832}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 449284170}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 480}
-  m_SizeDelta: {x: 332.615, y: 74.558}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &482295834
-MonoBehaviour:
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 167.51138
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000005722046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 472.2648
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &886220795
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482295832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: '100/100
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4284575487
-  m_fontColor: {r: 1, g: 0.4300301, b: 0.3820755, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &482295835
-CanvasRenderer:
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 428.53052
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 288.33423
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &906386669
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482295832}
-  m_CullTransparentMesh: 1
---- !u!1 &796862019
-GameObject:
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 265.3257
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000002861023
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 183.84935
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &925704228
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 796862020}
-  - component: {fileID: 796862022}
-  - component: {fileID: 796862021}
-  m_Layer: 5
-  m_Name: Mana
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &796862020
-RectTransform:
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 232.363
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 213.99362
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &981974322
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796862019}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 449284170}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 480}
-  m_SizeDelta: {x: 332.615, y: 74.558}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &796862021
-MonoBehaviour:
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 542.5944
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 258.71558
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &990224839
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796862019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: '80/80
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294943131
-  m_fontColor: {r: 0.6084906, g: 0.63310754, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &796862022
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796862019}
-  m_CullTransparentMesh: 1
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 268.1198
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 193.14029
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
 --- !u!1 &998619144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,13 +2728,70 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998619144}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000037252903, y: 1.7763568e-15, z: -1.110223e-16, w: 1}
+  m_LocalRotation: {x: -0.000000040921517, y: 0.00000002337989, z: -0.000000002467516, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 94880263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1007288754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 265.81238
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.019412994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 398.08734
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
 --- !u!1 &1061605766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +2860,2190 @@ CapsuleCollider:
   m_Height: 0.9331531
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1084862540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 213.83734
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000011444092
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 508.38055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1117704700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 567.99396
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 360.82773
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &1125881098
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 604.60754
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 362.77692
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &1130747184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 170.81015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 485.01785
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1 &1172030379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172030382}
+  - component: {fileID: 1172030381}
+  - component: {fileID: 1172030380}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &1172030380
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172030379}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: 13b5e04c63245c141ba08e106f12abd3, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &1172030381
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172030379}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 13b5e04c63245c141ba08e106f12abd3, type: 2}
+  m_TreeDistance: 100
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 100
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &1172030382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172030379}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.22246197, z: -0, w: 0.9749414}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -25.707, z: 0}
+--- !u!1001 &1172095196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 284.87842
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.9501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &1188540973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 545.8436
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 446.30316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1192770111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 259.75095
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000005722046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 219.88289
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1208041515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 555.6722
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 229.76254
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &1223340797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 609.31915
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 469.62402
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1302820410
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 232.23976
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 226.52284
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &1306859751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 255.82887
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 193.33655
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &1339375243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 257.34
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 524.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1360354165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 421.96582
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 385.6764
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1423729475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 589.6605
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 467.49084
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9749414
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22246197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -25.707
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+      propertyPath: m_Name
+      value: Wooden fence Ritual (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92e0561f733752f4f91efe07f9788c6a, type: 3}
+--- !u!1001 &1462507968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 560.02893
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 249.9516
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1537946092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 613.6916
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 487.77182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1596908330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 544.9446
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 588.1195
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1599812934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 586.25885
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 362.79428
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &1612133184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 236.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 245.23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8290496
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5591752
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 67.998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &1702337155
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 275.66827
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192.94043
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &1767213170
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 575.7716
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 231.58534
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &1792844926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 224.83171
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0153541565
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 522.71234
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1826260897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 568.4348
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 450.14905
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1878817580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 279.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00001335144
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 182.19585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+--- !u!1001 &1882571989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 577.7601
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 479.05655
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1884935123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 437.40805
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 375.7009
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1911664647
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 231.75468
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 505.19592
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1913892650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 587.8876
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 458.39734
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1 &1914569345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914569347}
+  - component: {fileID: 1914569346}
+  m_Layer: 0
+  m_Name: FPSCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1914569346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914569345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31068c4c7a87c354a8bb3be3c0cc6931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateInterval: 0.5
+--- !u!4 &1914569347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914569345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 149.22253, y: 10.588846, z: 86.67599}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1928787919
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 163.51723
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 488.9144
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: 'Witch hut Ritualv1 '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &1962115302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 257.73068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 502.04156
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1 &1994893807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994893808}
+  - component: {fileID: 1994893811}
+  - component: {fileID: 1994893810}
+  - component: {fileID: 1994893809}
+  m_Layer: 6
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1994893808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994893807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.67, z: 1.38}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143499118}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1994893809
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994893807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1994893810
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994893807}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1994893811
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994893807}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &2000990007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 558.7068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 600.149
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+--- !u!1001 &2006323648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 184.15585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 475.7732
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+      propertyPath: m_Name
+      value: Pathway Ritual
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42a4759bd570d9944a942f3c5bfdddc7, type: 3}
+--- !u!1001 &2041765066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 236.11577
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 486.17123
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+      propertyPath: m_Name
+      value: Well Ritual (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0e768a96686b0045bfc7aa009b74ccf, type: 3}
+--- !u!1001 &2133507759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 223.6243
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 492.53214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
+      propertyPath: m_Name
+      value: Witch hut Ritualv1  (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7697b0e1fc339c41a3dc7f7e29997bf, type: 3}
 --- !u!1 &2143499112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +5203,7 @@ Transform:
   m_GameObject: {fileID: 2143499112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.36, z: 0}
+  m_LocalPosition: {x: 270.3, y: 49.9, z: 226.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1385,31 +5249,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b11b05905ae05b49a4e967f3a77abd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manaText: {fileID: 796862021}
-  healthText: {fileID: 482295834}
-  startingMana: 80
-  startingMaxMana: 80
-  startingHp: 100
-  startingMaxHp: 100
---- !u!114 &2143499121
-MonoBehaviour:
+--- !u!1001 &2144642056
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143499112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4796f83e3cd9443ba6153b7a0a746a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainSpell: {fileID: 11400000, guid: 5e76bb1ce55032e4fb8eea9cfdb8c57b, type: 2}
-  AltSpell: {fileID: 11400000, guid: 99600cfb3b3b9fa4ebcbe69c3f1cecc5, type: 2}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 522.91
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 212.75351
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
+      propertyPath: m_Name
+      value: House for Ritual Blend (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e215e0e1a39cd4f937b826e60a2468, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 94880263}
+  - {fileID: 410087041}
+  - {fileID: 832575519}
   - {fileID: 2143499118}
-  - {fileID: 449284170}
-  - {fileID: 381954417}
+  - {fileID: 1914569347}
+  - {fileID: 1172030382}
+  - {fileID: 840681586}
+  - {fileID: 2006323648}
+  - {fileID: 1130747184}
+  - {fileID: 264803751}
+  - {fileID: 1928787919}
+  - {fileID: 1878817580}
+  - {fileID: 906386669}
+  - {fileID: 547084960}
+  - {fileID: 1172095196}
+  - {fileID: 1702337155}
+  - {fileID: 990224839}
+  - {fileID: 1306859751}
+  - {fileID: 836906300}
+  - {fileID: 925704228}
+  - {fileID: 1302820410}
+  - {fileID: 234762415}
+  - {fileID: 1192770111}
+  - {fileID: 516724629}
+  - {fileID: 325742180}
+  - {fileID: 471520973}
+  - {fileID: 1612133184}
+  - {fileID: 1084862540}
+  - {fileID: 1792844926}
+  - {fileID: 1911664647}
+  - {fileID: 397862172}
+  - {fileID: 2133507759}
+  - {fileID: 277964027}
+  - {fileID: 1339375243}
+  - {fileID: 1962115302}
+  - {fileID: 2041765066}
+  - {fileID: 366561362}
+  - {fileID: 91737422}
+  - {fileID: 141604741}
+  - {fileID: 1007288754}
+  - {fileID: 589718297}
+  - {fileID: 386093364}
+  - {fileID: 301250377}
+  - {fileID: 1125881098}
+  - {fileID: 1117704700}
+  - {fileID: 1599812934}
+  - {fileID: 2000990007}
+  - {fileID: 478392573}
+  - {fileID: 23304054}
+  - {fileID: 1596908330}
+  - {fileID: 808153338}
+  - {fileID: 1223340797}
+  - {fileID: 1882571989}
+  - {fileID: 1913892650}
+  - {fileID: 154018552}
+  - {fileID: 1826260897}
+  - {fileID: 1537946092}
+  - {fileID: 1188540973}
+  - {fileID: 371093995}
+  - {fileID: 1423729475}
+  - {fileID: 242381409}
+  - {fileID: 161161293}
+  - {fileID: 1208041515}
+  - {fileID: 2144642056}
+  - {fileID: 981974322}
+  - {fileID: 768443076}
+  - {fileID: 1462507968}
+  - {fileID: 1767213170}
+  - {fileID: 316712872}
+  - {fileID: 403460843}
+  - {fileID: 1884935123}
+  - {fileID: 1360354165}
+  - {fileID: 174063826}
+  - {fileID: 636074625}
+  - {fileID: 886220795}
