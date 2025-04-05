@@ -34,7 +34,14 @@ PluginImporter:
 AssetOrigin:
   serializedVersion: 1
   productId: 285961
-  packageName: "Nature Renderer 6\u30FBFree"
+  packageName: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+  packageVersion: 6.0.0
+  assetPath: Assets/Visual Design Cafe/Package Manager/VisualDesignCafe.Editor.Events.dll
+  uploadId: 666629
+AssetOrigin:
+  serializedVersion: 1
+  productId: 285961
+  packageName: 
   packageVersion: 6.0.0
   assetPath: Assets/Visual Design Cafe/Package Manager/VisualDesignCafe.Editor.Events.dll
   uploadId: 666629
