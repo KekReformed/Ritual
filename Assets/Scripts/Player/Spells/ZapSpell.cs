@@ -30,6 +30,8 @@ public class ZapSpell : ActiveSpell
             
         LineRenderer lr = zapObject.GetComponent<LineRenderer>();
         
+        
+        //Get the target location from the camera
         if (Physics.Raycast(targetRay, out hit, trueRange, targetableObjects))
         {
             ray = new Ray(PlayerManager.Instance.transform.position, (hit.point - PlayerManager.Instance.transform.position).normalized);

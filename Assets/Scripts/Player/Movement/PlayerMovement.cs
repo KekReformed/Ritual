@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
         _characterController = GetComponent<CharacterController>();
         
         _currentMovementVector = _defaultVector;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

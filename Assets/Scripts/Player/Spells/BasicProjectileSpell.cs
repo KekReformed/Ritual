@@ -16,7 +16,9 @@ public class BasicProjectileSpell : ActiveSpell
             
         GameObject fireballObject = Instantiate(projectilePrefab,PlayerManager.Instance.transform.position + PlayerManager.Instance.transform.rotation * Vector3.forward.normalized, Quaternion.identity);
         Rigidbody rb = fireballObject.GetComponent<Rigidbody>();
+        
         fireballObject.GetComponent<FireballMono>().Setup(damage);
+        
         rb.linearVelocity = PlayerManager.Instance.transform.rotation * Vector3.forward.normalized * projectileSpeed;
 
         return true;

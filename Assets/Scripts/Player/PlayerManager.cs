@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public static PlayerManager Instance;
     public static PlayerMovement Movement;
     public static PlayerInput PlayerInput;
+    public static PlayerSpellcasting PlayerSpellcasting;
     public static float PassiveManaUsage;
     public static PlayerStats PlayerStats = new PlayerStats();
     
@@ -53,7 +54,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
     void Awake()
     {
         Movement = GetComponent<PlayerMovement>();
-        PlayerInput = GetComponent<PlayerInput>();        
+        PlayerInput = GetComponent<PlayerInput>();
+        PlayerSpellcasting = GetComponent<PlayerSpellcasting>();
         if (Instance != null)
         {
             Debug.LogError("Multiple player managers! there should only be 1!");
@@ -79,6 +81,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
         
         UIManager.ManaRegenText.SetText($"+{Mathf.Round(manaRegen * 100) / 100}/s");
         Mana = Mathf.Min(_maxMana, _mana + manaRegen * Time.deltaTime);
+        
+        if(Input.GetKeyDown(KeyCode.M)) Damage(200);
     }
     
     /// <summary>
@@ -86,6 +90,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
     /// </summary>
     public static float GetAngleTowardsVectorFromCamera(Vector2 targetVector)
     {
+        if (Camera.main == null) return Mathf.Atan2(targetVector.x, targetVector.y) * Mathf.Rad2Deg;
+        
         float targetAngle = Mathf.Atan2(targetVector.x, targetVector.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
 
         return targetAngle;

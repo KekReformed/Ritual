@@ -30,7 +30,6 @@ public class PathfindingEnemy : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, aggroRange);
-
     }
 
 }

@@ -36,17 +36,18 @@ public class RadialMenuEntry : MonoBehaviour, IPointerClickHandler, IPointerEnte
         return (Icon.texture);
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public virtual void OnPointerClick(PointerEventData eventData)
     {
 
     }
+    
     public void OnPointerEnter(PointerEventData eventData)
     {  
         Rect.DOComplete();
         Rect.DOScale(Vector3.one * 1.5f, .3f).SetEase(Ease.OutQuad);
-
     }
-        public void OnPointerExit(PointerEventData eventData)
+    
+    public void OnPointerExit(PointerEventData eventData)
     {
         Rect.DOComplete();
         Rect.DOScale(Vector3.one,.3f).SetEase(Ease.OutQuad);
