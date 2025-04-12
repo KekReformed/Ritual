@@ -15,14 +15,14 @@ public class RadialUI : MonoBehaviour
         SpellList = spellList;
         for (int i = 0; i < SpellList.Length; i++)
         {
-            Spell spell = spellList[i];
-            if(spell == null) continue;
+            Spell spell = spellList[i]; 
+            //if(spell == null) continue;
 
             Debug.Log($"Pizza Slice {i+1}");
             
             GameObject PizzaSlice = GameObject.Find($"Pizza Slice {i+1}");
-
-            PizzaSlice.GetComponentInChildren<TMP_Text>().SetText(spell.name);
+            string spellName = spell == null ? "none" : spell.name;
+            PizzaSlice.GetComponentInChildren<TMP_Text>().SetText(spellName);
         }
     }
     

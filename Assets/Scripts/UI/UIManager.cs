@@ -26,7 +26,8 @@ public class UIManager : MonoBehaviour
     public static List<ResourceBar> ResourceBarList = new List<ResourceBar>();
     public static Dictionary<string, ResourceBar> ResourceBars = new Dictionary<string,ResourceBar>();
     public static UIManager Instance;
-    
+
+
     void Awake()
     {
         PrimarySpellSlot = primarySpellSlot;
@@ -49,7 +50,6 @@ public class UIManager : MonoBehaviour
         }
         Instance = this;
     }
-    
     void Start()
     {
         foreach (ResourceBar bar in ResourceBarList)
