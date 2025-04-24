@@ -17,6 +17,7 @@ MonoBehaviour:
   automatic: 0
   enabled: 0
   midairJumps: 1
+  dashCount: 2
   dashCooldown: 0.5
   dashSpeed: 30
   dashLength: 0.25

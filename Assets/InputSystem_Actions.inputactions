@@ -112,6 +112,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Use",
+                    "type": "Button",
+                    "id": "b605d7b1-033f-4365-95d8-25bcd344c82c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Open Spell Tree",
+                    "type": "Button",
+                    "id": "d23ecb98-feb9-4d7d-9f7d-d1ab79f98708",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -519,6 +537,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "SelectSecondarySpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e7e89f3e-c01b-47af-b69a-3fc90e3de3e3",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Use",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d62631c4-ce68-49c4-a9eb-27ba6edf8400",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Open Spell Tree",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

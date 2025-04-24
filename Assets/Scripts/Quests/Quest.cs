@@ -6,14 +6,16 @@ public class Quest : ScriptableObject
 {
     public UnityEvent onQuestStart;
     public UnityEvent onQuestEnd;
-    public KillObjective[] KillObjectives;
+    public KillObjective[] killObjectives;
+    public NPC questGiver;
+    public int skillPointReward;
 
     public void QuestStart()
     {
         onQuestStart.Invoke();
-        for (int i = 0; i < KillObjectives.Length; i++)
+        for (int i = 0; i < killObjectives.Length; i++)
         {
-            KillObjective killObjective = KillObjectives[i];
+            KillObjective killObjective = killObjectives[i];
             killObjective.QuestBegin();
         }
     }

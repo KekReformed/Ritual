@@ -21,7 +21,7 @@ public class RadialUI : MonoBehaviour
             Debug.Log($"Pizza Slice {i+1}");
             
             GameObject PizzaSlice = GameObject.Find($"Pizza Slice {i+1}");
-            string spellName = spell == null ? "none" : spell.name;
+            string spellName = spell == null ? "None" : spell.name;
             PizzaSlice.GetComponentInChildren<TMP_Text>().SetText(spellName);
         }
     }

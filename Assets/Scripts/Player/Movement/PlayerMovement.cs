@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 _lastMovementVector; 
     MovementVector _currentMovementVector;
 
-    Animator _animator;
+    public Animator animator;
     
     [Header("Basic Stats")]
     [SerializeField] float speed;
@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float deceleration;
     [SerializeField] float gravityScale = 1;
     [SerializeField] float jumpForce;
+    [SerializeField] Terrain terrain;
+    [SerializeField] float maxFallSpeed;
     
     //[HideInInspector] 
     public bool grounded;
@@ -35,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         _playerInput = PlayerManager.PlayerInput;
         _moveAction = _playerInput.actions.FindAction("Move");
         _jumpAction = _playerInput.actions.FindAction("Jump");
-        _animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         
         _characterController = GetComponent<CharacterController>();
         
@@ -47,7 +49,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 decelVector = Vector3.zero;
         
-        _animator.SetFloat("Move",_moveAction.ReadValue<Vector2>().magnitude);
+        animator.SetFloat("Move",_moveAction.ReadValue<Vector2>().magnitude);
+        animator.SetBool("Grounded", grounded);
         //Decelerate us if we were moving last frame, this only gets applied if our new vector after deceleration would be faster than _currentMovementVector
         if (grounded)
         {
@@ -86,9 +89,20 @@ public class PlayerMovement : MonoBehaviour
             _velocity.y = 0f;
         }
 
+        Mathf.Clamp(tempVector.y, -maxFallSpeed, maxFallSpeed);
+        
         //If the horizonatal speed we would get from our current vector is less than the last vector deccelerated then use the deccelerated vector rather than the new vector
         if (Mathf.Abs(_currentMovementVector.vector.x) < Mathf.Abs(decelVector.x)) tempVector.x = decelVector.x;
         if (Mathf.Abs(_currentMovementVector.vector.z) < Mathf.Abs(decelVector.z)) tempVector.z = decelVector.z;
+
+        Vector3 normal = GetNormal(terrain);
+
+        float slopeAngle = Vector3.Angle(normal, Vector3.up);
+
+        if (slopeAngle > _characterController.slopeLimit)
+        {
+            tempVector += new Vector3(normal.x, -normal.y, normal.z);
+        }
         
         _characterController.Move(tempVector * Time.deltaTime);
 
@@ -140,5 +154,21 @@ public class PlayerMovement : MonoBehaviour
         if (movementVector.priority <= _currentMovementVector.priority) return false;
         _currentMovementVector = movementVector;
         return true;
+    }
+    
+    Vector3 GetNormal(Terrain terrain)
+    {
+        Vector3 terrainPos = terrain.transform.position;
+        Vector3 position = transform.position;
+        
+        TerrainData terrainData = terrain.terrainData;
+        
+        // Convert world position to normalized terrain coordinates
+        float normX = (position.x - terrainPos.x) / terrainData.size.x;
+        float normZ = (position.z - terrainPos.z) / terrainData.size.z;
+
+        Vector3 normal = terrainData.GetInterpolatedNormal(normX, normZ);
+
+        return normal;
     }
 }

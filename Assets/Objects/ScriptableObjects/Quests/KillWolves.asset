@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfcf49401206ac4894d54225d784333, type: 3}
-  m_Name: Quest
+  m_Name: KillWolves
   m_EditorClassIdentifier: 
   onQuestStart:
     m_PersistentCalls:
@@ -18,6 +18,9 @@ MonoBehaviour:
   onQuestEnd:
     m_PersistentCalls:
       m_Calls: []
-  KillObjectives:
-  - count: 5
-    enemyID: Wolf
+  killObjectives:
+  - count: 3
+    enemyID: Stone Wolve
+    enemiesKilledOnStart: 0
+  questGiver: {fileID: 0}
+  skillPointReward: 4

@@ -16,9 +16,9 @@ public class PlayerManager : MonoBehaviour, IDamageable
     
     static float _mana;
     static float _maxMana;
-    
-    static float _health;
-    static float _maxHealth;
+
+    public static float Health { get; set; }
+    public static float MaxHealth { get; private set; }
 
     public static float Mana
     {
@@ -43,6 +43,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
             UIManager.SetManaUI(_mana,_maxMana,PassiveManaUsage);
         }
     }
+
+    public int skillPoints;
     
     [SerializeField] float startingMana;
     [SerializeField] float startingMaxMana;
@@ -70,8 +72,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
         MaxMana = startingMaxMana;
         PassiveManaUsage = 0;
         
-        _health = startingHp;
-        _maxHealth = startingMaxHp;
+        Health = startingHp;
+        MaxHealth = startingMaxHp;
     }
 
     void Update()
@@ -99,13 +101,13 @@ public class PlayerManager : MonoBehaviour, IDamageable
     
     public void Damage(float damage)
     {
-        _health -= damage;
-        if (_health <= 0)
+        Health -= damage;
+        if (Health <= 0)
         {
             SceneManager.LoadScene(0);
             Cursor.lockState = CursorLockMode.None;
         }
-        UIManager.HealthText.SetText($"{Mathf.Max(_health,0)}/{Mathf.Round(_maxHealth)}");
-        UIManager.ResourceBars["Health"].UpdateResource(_health, _maxHealth);
+        UIManager.HealthText.SetText($"{Mathf.Max(Health,0)}/{Mathf.Round(MaxHealth)}");
+        UIManager.ResourceBars["Health"].UpdateResource(Health, MaxHealth);
     }
 }

@@ -1,4 +1,7 @@
-﻿public class ActiveSpell : Spell
+﻿using UnityEngine;
+
+[CreateAssetMenu(fileName = "NothingSpell", menuName = "Spells/Active/None")]
+public class ActiveSpell : Spell
 {
     public override bool Use()
     {

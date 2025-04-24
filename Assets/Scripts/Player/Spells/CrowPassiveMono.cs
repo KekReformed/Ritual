@@ -10,20 +10,23 @@ public class CrowPassiveMono : MonoBehaviour
     InputAction _moveAction;
     InputAction _jumpAction;
     int _jumps;
+    int _dashs;
+    int _maxDashs;
     bool _dashing;
     MovementVector _movementVector;
 
     [SerializeField] int maxMidairJumps;
     [SerializeField] float dashSpeed;
 
-    public void Setup(int maxMidairJumps, float dashCooldown, float dashSpeed, float dashLength)
+    public void Setup(int maxMidairJumps, int maxMidairDashes, float dashCooldown, float dashSpeed, float dashLength)
     {
         TimerManager.AddTimer(new Timer("DashCooldown", dashCooldown + dashLength));
         TimerManager.AddTimer(new Timer("DashLength", dashLength));
         
-        
         this.maxMidairJumps = maxMidairJumps;
         this.dashSpeed = dashSpeed;
+        _dashs = maxMidairDashes;
+        _maxDashs = maxMidairDashes;
 
         _moveAction = PlayerManager.PlayerInput.actions.FindAction("Move");
         _dashAction = PlayerManager.PlayerInput.actions.FindAction("Dash");
@@ -34,7 +37,11 @@ public class CrowPassiveMono : MonoBehaviour
     {
         if (_dashAction.triggered) Dash();
         if (_jumpAction.triggered) DoubleJump();
-        if (PlayerManager.Movement.grounded) _jumps = maxMidairJumps;
+        if (PlayerManager.Movement.grounded)
+        {
+            _jumps = maxMidairJumps;
+            _dashs = _maxDashs;
+        }
         
         if (_dashing)
         {
@@ -49,7 +56,7 @@ public class CrowPassiveMono : MonoBehaviour
 
     void Dash()
     {
-        if (!TimerManager.CheckTimer("DashCooldown")) return;
+        if (!TimerManager.CheckTimer("DashCooldown") || _dashs == 0) return;
 
         float targetAngle = PlayerManager.GetAngleTowardsVectorFromCamera(_moveAction.ReadValue<Vector2>());
 
@@ -60,6 +67,7 @@ public class CrowPassiveMono : MonoBehaviour
 
         _movementVector =  new MovementVector(move, 1, false);
         _dashing = true;
+        _dashs -= 1;
     }
 
     void DoubleJump()
