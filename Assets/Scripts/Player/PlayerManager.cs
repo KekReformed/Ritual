@@ -58,7 +58,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public HashSet<string> Upgrades = new HashSet<string>();
     public HashSet<string> Inventory = new HashSet<string>();
     public bool completedAQuest;
-    
+
+    [SerializeField] CrowPassive crowPassive;
     
     void Awake()
     {
@@ -76,12 +77,15 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     void Start()
     {
+        crowPassive.PublicDisable();
         Mana = startingMana;
         MaxMana = startingMaxMana;
         PassiveManaUsage = 0;
         
         Health = startingHp;
         MaxHealth = startingMaxHp;
+        Upgrades.Clear();
+        Inventory.Clear();
     }
 
     void Update()

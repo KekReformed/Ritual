@@ -28,7 +28,7 @@ public class BasicEnemy : MonoBehaviour, IDamageable
             QuestManager.CheckKillObjectives();
         }
         
-        pathfinding.agent.SetDestination(PlayerManager.Instance.transform.position);
+        pathfinding?.agent.SetDestination(PlayerManager.Instance.transform.position);
 
         GameObject damageTextObject = Instantiate(damageText, transform.position + new Vector3(0,damageTextOffset,0), Quaternion.identity);
         damageTextObject.GetComponent<DamageText>().Setup(damage);

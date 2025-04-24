@@ -92,7 +92,7 @@ public class NPC : MonoBehaviour
         
         if (!PlayerManager.Instance.completedAQuest && _confirmedComplete)
         {
-            UIManager.Instance.title.SetTitle("Quests reward Skill points that can be spent in the Spell tree (TAB)", 5f, Color.white);
+            UIManager.Instance.title.SetTitle("Quests reward Skill points that can be spent in the Spell tree (TAB)", 5f, Color.cyan);
             PlayerManager.Instance.completedAQuest = true;
         }
 
@@ -108,9 +108,9 @@ public class NPC : MonoBehaviour
         if (quest.name == "" || !questComplete) UIManager.Instance.CreateNewDialogue(dialogue);
         else if (questComplete)
         {
-            UIManager.Instance.CreateNewDialogue(questCompleteDialogue);
             if (!_confirmedComplete)
             {
+                UIManager.Instance.CreateNewDialogue(questCompleteDialogue);
                 PlayerManager.Instance.skillPoints += quest.skillPointReward;
             }
             _confirmedComplete = true;

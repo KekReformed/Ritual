@@ -28,4 +28,8 @@ public class CrowPassive : PassiveSpell
         Destroy(_component);
     }
 
+    public void PublicDisable()
+    {
+        Disable();
+    }   
 }

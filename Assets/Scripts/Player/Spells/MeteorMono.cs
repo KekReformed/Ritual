@@ -14,7 +14,6 @@ public class MeteorMono : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.name == "Player" || LayerMask.NameToLayer("Spell") == other.gameObject.layer) return;
-        Debug.Log(other.gameObject.name);
         IDamageable damageable = other.GetComponent<IDamageable>();
         
         if (damageable == null)

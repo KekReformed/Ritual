@@ -31,5 +31,9 @@ public class Quest
     {
         onQuestEnd.Invoke();
         UIManager.Instance.title.SetTitle("Quest Complete!",2f, Color.green);
+        if (!PlayerManager.Instance.completedAQuest)
+        {
+            UIManager.Instance.title.SetTitle("Quests need to be turned in to their quest giver when completed to earn rewards",5f, Color.cyan);
+        }
     }
 }
