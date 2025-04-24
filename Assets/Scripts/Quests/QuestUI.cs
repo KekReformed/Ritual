@@ -13,6 +13,6 @@ public class QuestUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       _text.SetText($"Kill 5 wolves {PlayerManager.PlayerStats.GetStat("Wolf", "Kills").ToString()}/5");
+       if(QuestManager.Quest != null) _text.SetText($"Kill 5 wolves {PlayerManager.PlayerStats.GetStat("Wolf", "Kills").ToString()}/5");
     }
 }
