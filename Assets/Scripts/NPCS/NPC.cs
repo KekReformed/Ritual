@@ -89,6 +89,12 @@ public class NPC : MonoBehaviour
         PlayerManager.PlayerSpellcasting.enabled = true;
         dialogueCam.SetActive(false);
         UIManager.Instance.UnhideUI();
+        
+        if (!PlayerManager.Instance.completedAQuest && _confirmedComplete)
+        {
+            UIManager.Instance.title.SetTitle("Quests reward Skill points that can be spent in the Spell tree (TAB)", 5f, Color.white);
+            PlayerManager.Instance.completedAQuest = true;
+        }
 
         transform.rotation = Quaternion.Euler(_originalRotation);
         OnDialogueEnd.Invoke();

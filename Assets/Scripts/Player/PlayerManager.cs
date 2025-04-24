@@ -56,7 +56,10 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] [Range(0.01f,0.2f)] float manaRegenPercent;
 
     public HashSet<string> Upgrades = new HashSet<string>();
-
+    public HashSet<string> Inventory = new HashSet<string>();
+    public bool completedAQuest;
+    
+    
     void Awake()
     {
         Movement = GetComponent<PlayerMovement>();

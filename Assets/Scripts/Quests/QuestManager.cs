@@ -24,6 +24,11 @@ public class QuestManager : MonoBehaviour
                 KillObjective killObjective = quest.killObjectives[i];
                 if(!killObjective.CheckIfComplete()) complete = false;
             }
+            for (int i = 0; i < quest.ItemObjectives.Length; i++)
+            {
+                ItemObjective itemObjective = quest.ItemObjectives[i];
+                if(!itemObjective.CheckIfComplete()) complete = false;
+            }
             if (complete)
             {
                 if (!quest.questGiver.questComplete)
