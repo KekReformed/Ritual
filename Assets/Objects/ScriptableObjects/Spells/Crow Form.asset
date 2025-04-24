@@ -15,6 +15,7 @@ MonoBehaviour:
   cost: 40
   cooldown: 0
   automatic: 0
+  icon: {fileID: 21300000, guid: 0c042ac563531304e8d7044d545c47eb, type: 3}
   enabled: 0
   midairJumps: 1
   dashCount: 2

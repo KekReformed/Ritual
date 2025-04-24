@@ -1,18 +1,26 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpellSlot : MonoBehaviour
 {
-    TMP_Text _text;
+    Image _image;
 
     void Awake()
     {
-        _text = GetComponentInChildren<TMP_Text>();
+        _image = transform.GetChild(0).GetComponent<Image>();
     }
     
-    public void SetSpellSlot(string spellName)
+    public void SetSpellSlot(Sprite icon)
     {
-        _text.SetText(spellName);
+        if (!icon)
+        {
+            Debug.LogError("No Icon for spell!");
+            return;
+        }
+        
+        _image.sprite = icon;
+        _image.SetNativeSize();
     }
 }

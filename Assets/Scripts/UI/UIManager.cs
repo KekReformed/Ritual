@@ -35,6 +35,8 @@ public class UIManager : MonoBehaviour
 
     public Spell selectedSpell;
     public GameObject UISelection;
+
+    public TitleUI title;
     
     public static SpellSlot PrimarySpellSlot;
     public static SpellSlot SecondarySpellSlot;
@@ -73,7 +75,8 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Multiple UI managers! there should only be 1!");
             return;
         }
-        
+
+        title = GetComponentInChildren<TitleUI>();
         Instance = this;
     }
     void Start()
@@ -227,8 +230,12 @@ public class UIManager : MonoBehaviour
         PlayerManager.Instance.skillPoints -= spellTreeSlot.cost;
         currentSkillPoints.SetText($"Current Skill Points: {PlayerManager.Instance.skillPoints.ToString()}");
         spellTreeSlot.learnt = true;
-        
-        if(spellTreeSlot.upgrade) return;
+
+        if (spellTreeSlot.upgrade)
+        {
+            PlayerManager.Instance.Upgrades.Add(spellTreeSlot.upgradeName);
+            return;
+        }
         
         for (int i = 0; i < RadialUI.SpellList.Length; i++)
         {
@@ -237,7 +244,11 @@ public class UIManager : MonoBehaviour
             RadialUI.SpellList[i] = selectedSpell;
             RadialUI.gameObject.SetActive(true);
             GameObject PizzaSlice = GameObject.Find($"Pizza Slice {i+1}");
-            PizzaSlice.GetComponentInChildren<TMP_Text>().SetText(selectedSpell.name);
+            
+            Image image = PizzaSlice.transform.GetChild(0).GetComponent<Image>();
+            image.sprite = selectedSpell.icon;
+            image.SetNativeSize();
+            
             RadialUI.gameObject.SetActive(false);
             break;
         }

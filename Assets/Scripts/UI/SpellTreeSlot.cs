@@ -10,6 +10,7 @@ public class SpellTreeSlot : MonoBehaviour
     public Spell spell;
     public bool upgrade;
     public bool learnt;
+    public string upgradeName;
     
     public int cost;
     

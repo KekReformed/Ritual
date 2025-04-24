@@ -13,7 +13,6 @@ public class FireballMono : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         IDamageable damageable = other.GetComponent<IDamageable>();
-        Debug.Log(other.name);
         
         if (damageable == null)
         {

@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -53,11 +55,14 @@ public class PlayerManager : MonoBehaviour, IDamageable
     [SerializeField] float startingMaxHp;
     [SerializeField] [Range(0.01f,0.2f)] float manaRegenPercent;
 
+    public HashSet<string> Upgrades = new HashSet<string>();
+
     void Awake()
     {
         Movement = GetComponent<PlayerMovement>();
         PlayerInput = GetComponent<PlayerInput>();
         PlayerSpellcasting = GetComponent<PlayerSpellcasting>();
+        
         if (Instance != null)
         {
             Debug.LogError("Multiple player managers! there should only be 1!");
@@ -107,6 +112,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
             SceneManager.LoadScene(0);
             Cursor.lockState = CursorLockMode.None;
         }
+        Health = Mathf.Clamp(Health, -10, MaxHealth);
         UIManager.HealthText.SetText($"{Mathf.Max(Health,0)}/{Mathf.Round(MaxHealth)}");
         UIManager.ResourceBars["Health"].UpdateResource(Health, MaxHealth);
     }

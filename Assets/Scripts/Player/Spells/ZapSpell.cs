@@ -14,7 +14,12 @@ public class ZapSpell : ActiveSpell
     
     public override bool Use()
     {
-        if (!base.Use()) return false;
+        if (PlayerManager.Instance.Upgrades.Contains("ZapUpgrade")) damage += 2;
+        if (!base.Use())
+        {
+            if (PlayerManager.Instance.Upgrades.Contains("ZapUpgrade")) damage -= 2;
+            return false;
+        }
 
         float trueRange = range + Vector3.Distance(Camera.main.transform.position, PlayerManager.Instance.transform.position);
         
@@ -45,6 +50,7 @@ public class ZapSpell : ActiveSpell
             
             lr.SetPositions(positions);
             
+            if (PlayerManager.Instance.Upgrades.Contains("ZapUpgrade")) damage -= 2;
             return true;
         }
         
@@ -58,7 +64,11 @@ public class ZapSpell : ActiveSpell
             //Deal the damage
             IDamageable damageable = hit.collider.GetComponent<IDamageable>();
 
-            if (damageable == null) return true;
+            if (damageable == null)
+            {
+                if (PlayerManager.Instance.Upgrades.Contains("ZapUpgrade")) damage -= 2;
+                return true;
+            }
             
             damageable.Damage(damage);
         }
@@ -67,6 +77,7 @@ public class ZapSpell : ActiveSpell
             Debug.LogError("Zap attempted to hit object that should've been in range but wasn't!");
         }
         
+        if (PlayerManager.Instance.Upgrades.Contains("ZapUpgrade")) damage -= 2;
         return true;
     }
 }

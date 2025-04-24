@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    public static Quest Quest;
+    public static Dictionary<string, Quest> Quests = new Dictionary<string, Quest>();
     public static QuestManager Instance;
     
     void Start()
@@ -14,17 +14,25 @@ public class QuestManager : MonoBehaviour
 
     public static void CheckKillObjectives()
     {
-        if (Quest == null) return;
+        if (Quests.Count == 0) return;
         
         bool complete = true;
-        for (int i = 0; i < Quest.killObjectives.Length; i++)
+        foreach (Quest quest in Quests.Values)
         {
-            KillObjective killObjective = Quest.killObjectives[i];
-            if(!killObjective.CheckIfComplete()) complete = false;
+            for (int i = 0; i < quest.killObjectives.Length; i++)
+            {
+                KillObjective killObjective = quest.killObjectives[i];
+                if(!killObjective.CheckIfComplete()) complete = false;
+            }
+            if (complete)
+            {
+                if (!quest.questGiver.questComplete)
+                {
+                    quest.QuestEnd();
+                }
+                quest.questGiver.questComplete = true;
+            }
         }
-        if (complete)
-        {
-            Quest.questGiver.questComplete = true;
-        }
+        
     }
 }

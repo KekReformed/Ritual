@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78afc1879b38aea4581e2a22de789711, type: 3}
+  m_Name: Meteor
+  m_EditorClassIdentifier: 
+  cost: 50
+  cooldown: 4
+  automatic: 0
+  icon: {fileID: 21300000, guid: 8adfc5a4a1c2ec6458adf64d064b5f99, type: 3}
+  range: 30
+  targetableObjects:
+    serializedVersion: 2
+    m_Bits: 1153
+  meteorPrefab: {fileID: 8014588407299346744, guid: 0b05a5dfbf946cd458482756d56b9a83, type: 3}
+  damage: 20
+  speed: 1500

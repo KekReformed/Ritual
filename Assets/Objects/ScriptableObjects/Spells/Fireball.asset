@@ -15,6 +15,7 @@ MonoBehaviour:
   cost: 20
   cooldown: 1
   automatic: 0
+  icon: {fileID: 21300000, guid: b0090e9e012c5194cac37b9dccecabe0, type: 3}
   projectilePrefab: {fileID: 3924394950785101786, guid: ccb158d2cf59eee47a36febe793e54c7, type: 3}
   projectileSpeed: 20
   damage: 15

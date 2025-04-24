@@ -16,8 +16,8 @@ public class PlayerSpellcasting : MonoBehaviour
     {
         _attackAction = PlayerManager.PlayerInput.actions.FindAction("Attack");
         _altAttackAction = PlayerManager.PlayerInput.actions.FindAction("AltAttack");
-        UIManager.PrimarySpellSlot.SetSpellSlot(MainSpell.name);
-        UIManager.SecondarySpellSlot.SetSpellSlot(AltSpell.name);
+        UIManager.PrimarySpellSlot.SetSpellSlot(MainSpell.icon);
+        UIManager.SecondarySpellSlot.SetSpellSlot(AltSpell.icon);
     }
 
     // Update is called once per frame

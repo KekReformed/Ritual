@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName = "Quest", menuName = "Quests/Quest")]
-public class Quest : ScriptableObject
+[Serializable]
+public class Quest
 {
+    public string name;
     public UnityEvent onQuestStart;
     public UnityEvent onQuestEnd;
     public KillObjective[] killObjectives;
@@ -18,10 +20,12 @@ public class Quest : ScriptableObject
             KillObjective killObjective = killObjectives[i];
             killObjective.QuestBegin();
         }
+        Debug.Log("Quest start");
     }
 
     public void QuestEnd()
     {
         onQuestEnd.Invoke();
+        UIManager.Instance.title.SetTitle("Quest Complete!",2f, Color.green);
     }
 }

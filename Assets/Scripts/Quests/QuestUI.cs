@@ -3,7 +3,7 @@ using TMPro;
 
 public class QuestUI : MonoBehaviour
 {
-    TMP_Text _text; 
+    TMP_Text _text;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,17 +13,24 @@ public class QuestUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (QuestManager.Quest != null)
+        _text.SetText("");
+        string questText = "";
+        foreach (Quest quest in QuestManager.Quests.Values)
         {
-            for (int i = 0; i < QuestManager.Quest.killObjectives.Length; i++)
+            if (quest != null)
             {
-                KillObjective killObjective = QuestManager.Quest.killObjectives[i];
-
-                //_text.SetText($"Kill 5 wolves {PlayerManager.PlayerStats.GetStat("Wolf", "Kills").ToString()}/5");
-                _text.SetText(
-                    $"Kill {killObjective.count} {killObjective.enemyID}s {Mathf.Min(PlayerManager.PlayerStats.GetStat(killObjective.enemyID, "Kills") - killObjective.enemiesKilledOnStart, killObjective.count).ToString()}/{killObjective.count} \n");
+                questText += $"{quest.name}: \n";
+                for (int i = 0; i < quest.killObjectives.Length; i++)
+                {
+                    KillObjective killObjective = quest.killObjectives[i];
+                    questText +=
+                        $"Kill {killObjective.count} {killObjective.enemyID}s {Mathf.Min(PlayerManager.PlayerStats.GetStat(killObjective.enemyID, "Kills") - killObjective.enemiesKilledOnStart, killObjective.count).ToString()}/{killObjective.count} \n";
+                }
+                if (quest.questGiver.questComplete) questText += "Quest Complete! Return to Quest giver";
+                    
+                _text.SetText(questText);
             }
+            else _text.SetText("");
         }
-        else _text.SetText("");
     }
 }

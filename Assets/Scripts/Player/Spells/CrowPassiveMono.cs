@@ -35,7 +35,7 @@ public class CrowPassiveMono : MonoBehaviour
 
     void Update()
     {
-        if (_dashAction.triggered) Dash();
+        if (_dashAction.triggered && PlayerManager.Instance.Upgrades.Contains("Dash")) Dash();
         if (_jumpAction.triggered) DoubleJump();
         if (PlayerManager.Movement.grounded)
         {

@@ -9,7 +9,12 @@ public class BasicProjectileSpell : ActiveSpell
     
     public override bool Use()
     {
-        if (!base.Use()) return false;
+        if (PlayerManager.Instance.Upgrades.Contains("FireballUpgrade")) cost -= 5;
+        if (!base.Use())
+        {
+            if (PlayerManager.Instance.Upgrades.Contains("FireballUpgrade")) cost += 5;
+            return false;
+        }
         float targetAngle = PlayerManager.GetAngleTowardsVectorFromCamera(Vector3.forward);
         
         PlayerManager.Instance.transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
@@ -21,6 +26,7 @@ public class BasicProjectileSpell : ActiveSpell
         
         rb.linearVelocity = PlayerManager.Instance.transform.rotation * Vector3.forward.normalized * projectileSpeed;
 
+        if (PlayerManager.Instance.Upgrades.Contains("FireballUpgrade")) cost += 5;
         return true;
     }
 }

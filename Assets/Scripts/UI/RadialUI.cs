@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RadialUI : MonoBehaviour
 {
@@ -16,13 +17,15 @@ public class RadialUI : MonoBehaviour
         for (int i = 0; i < SpellList.Length; i++)
         {
             Spell spell = spellList[i]; 
-            //if(spell == null) continue;
+            if(spell == null) continue;
 
             Debug.Log($"Pizza Slice {i+1}");
             
             GameObject PizzaSlice = GameObject.Find($"Pizza Slice {i+1}");
-            string spellName = spell == null ? "None" : spell.name;
-            PizzaSlice.GetComponentInChildren<TMP_Text>().SetText(spellName);
+            
+            Image image = PizzaSlice.transform.GetChild(0).GetComponent<Image>();
+            image.sprite = spell.icon;
+            image.SetNativeSize();
         }
     }
     
@@ -54,12 +57,12 @@ public class RadialUI : MonoBehaviour
         if (!altSpell)
         {
             PlayerManager.PlayerSpellcasting.MainSpell = SpellList[index];
-            UIManager.PrimarySpellSlot.SetSpellSlot(SpellList[index].name);
+            UIManager.PrimarySpellSlot.SetSpellSlot(SpellList[index].icon);
         }
         else
         {
             PlayerManager.PlayerSpellcasting.AltSpell = SpellList[index];
-            UIManager.SecondarySpellSlot.SetSpellSlot(SpellList[index].name);
+            UIManager.SecondarySpellSlot.SetSpellSlot(SpellList[index].icon);
         }
     }
 

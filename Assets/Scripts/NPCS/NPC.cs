@@ -62,14 +62,16 @@ public class NPC : MonoBehaviour
             else
             {
                 StopTalking();
-                if (quest != null && !_questAdded && QuestManager.Quest == null)
+                if (quest.name != "" && !_questAdded)
                 {
-                    QuestManager.Quest = quest;
+                    QuestManager.Quests.Add(quest.name,quest);
+                    quest.QuestStart();
                     _questAdded = true;
                 }
                 if (questComplete)
                 {
-                    QuestManager.Quest = null;
+                    QuestManager.Quests.Remove(quest.name);
+                    UIManager.Instance.title.SetTitle($"Gained {quest.skillPointReward} skill points!",2f, Color.green);
                 }
             }
         }
@@ -97,7 +99,7 @@ public class NPC : MonoBehaviour
         _animator.SetBool("Talking", true);
         UIManager.Instance.talking = true;
         
-        if (quest == null || !questComplete) UIManager.Instance.CreateNewDialogue(dialogue);
+        if (quest.name == "" || !questComplete) UIManager.Instance.CreateNewDialogue(dialogue);
         else if (questComplete)
         {
             UIManager.Instance.CreateNewDialogue(questCompleteDialogue);

@@ -15,6 +15,7 @@ MonoBehaviour:
   cost: 15
   cooldown: 0.75
   automatic: 1
+  icon: {fileID: 21300000, guid: 6b7e6fe6952e8c541a94bc09825aaa8e, type: 3}
   targetableObjects:
     serializedVersion: 2
     m_Bits: 1153
