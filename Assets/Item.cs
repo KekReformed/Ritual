@@ -13,6 +13,8 @@ public class Item : MonoBehaviour
 
         UIManager.Instance.title.SetTitle($"{item} Acquired!",2f,Color.green);
         
-        Destroy(this);
+        QuestManager.CheckObjectives();
+        
+        Destroy(gameObject);
     }
 }

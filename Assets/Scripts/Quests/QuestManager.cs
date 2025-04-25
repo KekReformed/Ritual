@@ -12,7 +12,7 @@ public class QuestManager : MonoBehaviour
         Instance = this;
     }
 
-    public static void CheckKillObjectives()
+    public static void CheckObjectives()
     {
         if (Quests.Count == 0) return;
         
@@ -24,9 +24,11 @@ public class QuestManager : MonoBehaviour
                 KillObjective killObjective = quest.killObjectives[i];
                 if(!killObjective.CheckIfComplete()) complete = false;
             }
-            for (int i = 0; i < quest.ItemObjectives.Length; i++)
+            
+            for (int i = 0; i < quest.itemObjectives.Length; i++)
             {
-                ItemObjective itemObjective = quest.ItemObjectives[i];
+                ItemObjective itemObjective = quest.itemObjectives[i];
+                
                 if(!itemObjective.CheckIfComplete()) complete = false;
             }
             if (complete)

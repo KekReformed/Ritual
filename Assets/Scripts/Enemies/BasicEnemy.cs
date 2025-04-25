@@ -25,7 +25,7 @@ public class BasicEnemy : MonoBehaviour, IDamageable
         {
             Destroy(gameObject);
             PlayerManager.PlayerStats.IncrementStat(enemyID,"Kills");
-            QuestManager.CheckKillObjectives();
+            QuestManager.CheckObjectives();
         }
         
         pathfinding?.agent.SetDestination(PlayerManager.Instance.transform.position);

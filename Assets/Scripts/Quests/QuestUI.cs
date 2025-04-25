@@ -26,9 +26,9 @@ public class QuestUI : MonoBehaviour
                     questText +=
                         $"Kill {killObjective.count} {killObjective.enemyID}s {Mathf.Min(PlayerManager.PlayerStats.GetStat(killObjective.enemyID, "Kills") - killObjective.enemiesKilledOnStart, killObjective.count).ToString()}/{killObjective.count} \n";
                 }
-                for (int i = 0; i < quest.ItemObjectives.Length; i++)
+                for (int i = 0; i < quest.itemObjectives.Length; i++)
                 {
-                    ItemObjective itemObjective = quest.ItemObjectives[i];
+                    ItemObjective itemObjective = quest.itemObjectives[i];
                     questText += $"Recover the {itemObjective.item}\n";
                 }
                 if (quest.questGiver.questComplete) questText += "Quest Complete! Return to Quest giver";

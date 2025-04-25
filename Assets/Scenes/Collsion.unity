@@ -5534,7 +5534,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1189785523161578036, guid: f1525648b65f845448803554f4483ff8, type: 3}
+      propertyPath: quest.itemObjectives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189785523161578036, guid: f1525648b65f845448803554f4483ff8, type: 3}
       propertyPath: quest.ItemObjectives.Array.data[0].item
+      value: Children
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189785523161578036, guid: f1525648b65f845448803554f4483ff8, type: 3}
+      propertyPath: quest.itemObjectives.Array.data[0].item
       value: Children
       objectReference: {fileID: 0}
     - target: {fileID: 1189785523161578036, guid: f1525648b65f845448803554f4483ff8, type: 3}
@@ -5571,7 +5579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1671472266529084688, guid: f1525648b65f845448803554f4483ff8, type: 3}
       propertyPath: m_Name
-      value: Female NPC
+      value: Female NPC (children)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19985,7 +19993,7 @@ Transform:
   m_GameObject: {fileID: 1697867173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 635.62, y: 1.028, z: 306}
+  m_LocalPosition: {x: 552.7, y: 1.028, z: 241.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

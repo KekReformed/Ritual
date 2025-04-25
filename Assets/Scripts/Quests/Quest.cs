@@ -9,7 +9,7 @@ public class Quest
     public UnityEvent onQuestStart;
     public UnityEvent onQuestEnd;
     public KillObjective[] killObjectives;
-    public ItemObjective[] ItemObjectives;
+    public ItemObjective[] itemObjectives;
     public NPC questGiver;
     public int skillPointReward;
 
@@ -21,9 +21,9 @@ public class Quest
             KillObjective killObjective = killObjectives[i];
             killObjective.QuestBegin();
         }
-        for (int i = 0; i < ItemObjectives.Length; i++)
+        for (int i = 0; i < itemObjectives.Length; i++)
         {
-            ItemObjective itemObjective = ItemObjectives[i];
+            ItemObjective itemObjective = itemObjectives[i];
         }
     }
 
